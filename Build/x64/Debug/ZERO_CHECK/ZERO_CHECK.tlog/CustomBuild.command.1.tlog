@@ -1,0 +1,10 @@
+^D:\PROG\BOOK\OPENGL\UNIREAL\BUILD\CMAKEFILES\D5290796C2EBB11757215BAC67A79A2D\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Prog/Book/OpenGL/Unireal/Solution -BD:/Prog/Book/OpenGL/Unireal/Build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/Prog/Book/OpenGL/Unireal/Build/Unireal.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

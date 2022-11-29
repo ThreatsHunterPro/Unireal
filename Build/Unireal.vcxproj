@@ -1,0 +1,433 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DB55AD2F-FFF9-3593-87A6-68898946AB1A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>Unireal</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Prog\Book\OpenGL\Unireal\Build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Unireal.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Unireal</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Prog\Book\OpenGL\Unireal\Build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Unireal.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Unireal</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Prog\Book\OpenGL\Unireal\Build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Unireal.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Unireal</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Prog\Book\OpenGL\Unireal\Build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Unireal.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Unireal</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Prog\Book\OpenGL\Unireal\Solution\External\glfw-3.1.2\include;D:\Prog\Book\OpenGL\Unireal\Solution\External\glm-0.9.7.1;D:\Prog\Book\OpenGL\Unireal\Solution\External\glew-1.13.0\include;D:\Prog\Book\OpenGL\Unireal\Solution\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;TW_STATIC;TW_NO_LIB_PRAGMA;TW_NO_DIRECT3DS;GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;TW_STATIC;TW_NO_LIB_PRAGMA;TW_NO_DIRECT3DS;GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Prog\Book\OpenGL\Unireal\Solution\External\glfw-3.1.2\include;D:\Prog\Book\OpenGL\Unireal\Solution\External\glm-0.9.7.1;D:\Prog\Book\OpenGL\Unireal\Solution\External\glew-1.13.0\include;D:\Prog\Book\OpenGL\Unireal\Solution\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Prog\Book\OpenGL\Unireal\Solution\External\glfw-3.1.2\include;D:\Prog\Book\OpenGL\Unireal\Solution\External\glm-0.9.7.1;D:\Prog\Book\OpenGL\Unireal\Solution\External\glew-1.13.0\include;D:\Prog\Book\OpenGL\Unireal\Solution\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;External\glfw-3.1.2\src\Debug\glfw3.lib;External\Debug\GLEW_1130.lib;opengl32.lib;glu32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Prog/Book/OpenGL/Unireal/Build/Debug/Unireal.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Prog/Book/OpenGL/Unireal/Build/Debug/Unireal.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Prog\Book\OpenGL\Unireal\Solution\External\glfw-3.1.2\include;D:\Prog\Book\OpenGL\Unireal\Solution\External\glm-0.9.7.1;D:\Prog\Book\OpenGL\Unireal\Solution\External\glew-1.13.0\include;D:\Prog\Book\OpenGL\Unireal\Solution\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;TW_STATIC;TW_NO_LIB_PRAGMA;TW_NO_DIRECT3DS;GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;TW_STATIC;TW_NO_LIB_PRAGMA;TW_NO_DIRECT3DS;GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Prog\Book\OpenGL\Unireal\Solution\External\glfw-3.1.2\include;D:\Prog\Book\OpenGL\Unireal\Solution\External\glm-0.9.7.1;D:\Prog\Book\OpenGL\Unireal\Solution\External\glew-1.13.0\include;D:\Prog\Book\OpenGL\Unireal\Solution\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Prog\Book\OpenGL\Unireal\Solution\External\glfw-3.1.2\include;D:\Prog\Book\OpenGL\Unireal\Solution\External\glm-0.9.7.1;D:\Prog\Book\OpenGL\Unireal\Solution\External\glew-1.13.0\include;D:\Prog\Book\OpenGL\Unireal\Solution\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;External\glfw-3.1.2\src\Release\glfw3.lib;External\Release\GLEW_1130.lib;opengl32.lib;glu32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Prog/Book/OpenGL/Unireal/Build/Release/Unireal.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Prog/Book/OpenGL/Unireal/Build/Release/Unireal.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Prog\Book\OpenGL\Unireal\Solution\External\glfw-3.1.2\include;D:\Prog\Book\OpenGL\Unireal\Solution\External\glm-0.9.7.1;D:\Prog\Book\OpenGL\Unireal\Solution\External\glew-1.13.0\include;D:\Prog\Book\OpenGL\Unireal\Solution\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;TW_STATIC;TW_NO_LIB_PRAGMA;TW_NO_DIRECT3DS;GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;TW_STATIC;TW_NO_LIB_PRAGMA;TW_NO_DIRECT3DS;GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Prog\Book\OpenGL\Unireal\Solution\External\glfw-3.1.2\include;D:\Prog\Book\OpenGL\Unireal\Solution\External\glm-0.9.7.1;D:\Prog\Book\OpenGL\Unireal\Solution\External\glew-1.13.0\include;D:\Prog\Book\OpenGL\Unireal\Solution\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Prog\Book\OpenGL\Unireal\Solution\External\glfw-3.1.2\include;D:\Prog\Book\OpenGL\Unireal\Solution\External\glm-0.9.7.1;D:\Prog\Book\OpenGL\Unireal\Solution\External\glew-1.13.0\include;D:\Prog\Book\OpenGL\Unireal\Solution\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;External\glfw-3.1.2\src\MinSizeRel\glfw3.lib;External\MinSizeRel\GLEW_1130.lib;opengl32.lib;glu32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Prog/Book/OpenGL/Unireal/Build/MinSizeRel/Unireal.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Prog/Book/OpenGL/Unireal/Build/MinSizeRel/Unireal.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Prog\Book\OpenGL\Unireal\Solution\External\glfw-3.1.2\include;D:\Prog\Book\OpenGL\Unireal\Solution\External\glm-0.9.7.1;D:\Prog\Book\OpenGL\Unireal\Solution\External\glew-1.13.0\include;D:\Prog\Book\OpenGL\Unireal\Solution\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;TW_STATIC;TW_NO_LIB_PRAGMA;TW_NO_DIRECT3DS;GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;TW_STATIC;TW_NO_LIB_PRAGMA;TW_NO_DIRECT3DS;GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Prog\Book\OpenGL\Unireal\Solution\External\glfw-3.1.2\include;D:\Prog\Book\OpenGL\Unireal\Solution\External\glm-0.9.7.1;D:\Prog\Book\OpenGL\Unireal\Solution\External\glew-1.13.0\include;D:\Prog\Book\OpenGL\Unireal\Solution\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Prog\Book\OpenGL\Unireal\Solution\External\glfw-3.1.2\include;D:\Prog\Book\OpenGL\Unireal\Solution\External\glm-0.9.7.1;D:\Prog\Book\OpenGL\Unireal\Solution\External\glew-1.13.0\include;D:\Prog\Book\OpenGL\Unireal\Solution\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;External\glfw-3.1.2\src\RelWithDebInfo\glfw3.lib;External\RelWithDebInfo\GLEW_1130.lib;opengl32.lib;glu32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Prog/Book/OpenGL/Unireal/Build/RelWithDebInfo/Unireal.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Prog/Book/OpenGL/Unireal/Build/RelWithDebInfo/Unireal.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Prog\Book\OpenGL\Unireal\Solution\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Prog/Book/OpenGL/Unireal/Solution/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Prog/Book/OpenGL/Unireal/Solution -BD:/Prog/Book/OpenGL/Unireal/Build --check-stamp-file D:/Prog/Book/OpenGL/Unireal/Build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;D:\Prog\Book\OpenGL\Unireal\Build\CMakeFiles\3.24.2\CMakeCCompiler.cmake;D:\Prog\Book\OpenGL\Unireal\Build\CMakeFiles\3.24.2\CMakeCXXCompiler.cmake;D:\Prog\Book\OpenGL\Unireal\Build\CMakeFiles\3.24.2\CMakeRCCompiler.cmake;D:\Prog\Book\OpenGL\Unireal\Build\CMakeFiles\3.24.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Prog\Book\OpenGL\Unireal\Build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Prog/Book/OpenGL/Unireal/Solution/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Prog/Book/OpenGL/Unireal/Solution -BD:/Prog/Book/OpenGL/Unireal/Build --check-stamp-file D:/Prog/Book/OpenGL/Unireal/Build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;D:\Prog\Book\OpenGL\Unireal\Build\CMakeFiles\3.24.2\CMakeCCompiler.cmake;D:\Prog\Book\OpenGL\Unireal\Build\CMakeFiles\3.24.2\CMakeCXXCompiler.cmake;D:\Prog\Book\OpenGL\Unireal\Build\CMakeFiles\3.24.2\CMakeRCCompiler.cmake;D:\Prog\Book\OpenGL\Unireal\Build\CMakeFiles\3.24.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Prog\Book\OpenGL\Unireal\Build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Prog/Book/OpenGL/Unireal/Solution/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Prog/Book/OpenGL/Unireal/Solution -BD:/Prog/Book/OpenGL/Unireal/Build --check-stamp-file D:/Prog/Book/OpenGL/Unireal/Build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;D:\Prog\Book\OpenGL\Unireal\Build\CMakeFiles\3.24.2\CMakeCCompiler.cmake;D:\Prog\Book\OpenGL\Unireal\Build\CMakeFiles\3.24.2\CMakeCXXCompiler.cmake;D:\Prog\Book\OpenGL\Unireal\Build\CMakeFiles\3.24.2\CMakeRCCompiler.cmake;D:\Prog\Book\OpenGL\Unireal\Build\CMakeFiles\3.24.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Prog\Book\OpenGL\Unireal\Build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Prog/Book/OpenGL/Unireal/Solution/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Prog/Book/OpenGL/Unireal/Solution -BD:/Prog/Book/OpenGL/Unireal/Build --check-stamp-file D:/Prog/Book/OpenGL/Unireal/Build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;D:\Prog\Book\OpenGL\Unireal\Build\CMakeFiles\3.24.2\CMakeCCompiler.cmake;D:\Prog\Book\OpenGL\Unireal\Build\CMakeFiles\3.24.2\CMakeCXXCompiler.cmake;D:\Prog\Book\OpenGL\Unireal\Build\CMakeFiles\3.24.2\CMakeRCCompiler.cmake;D:\Prog\Book\OpenGL\Unireal\Build\CMakeFiles\3.24.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Prog\Book\OpenGL\Unireal\Build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Engine\Main.cpp" />
+    <ClCompile Include="D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Engine\Engine.cpp" />
+    <ClInclude Include="D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Engine\Engine.h" />
+    <ClCompile Include="D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Engine\World.cpp" />
+    <ClInclude Include="D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Engine\World.h" />
+    <ClCompile Include="D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Engine\CameraManager.cpp" />
+    <ClInclude Include="D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Engine\CameraManager.h" />
+    <ClInclude Include="D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Engine\Macros.h" />
+    <ClCompile Include="D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\GUI\Window.cpp" />
+    <ClInclude Include="D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\GUI\Window.h" />
+    <ClCompile Include="D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.cpp" />
+    <ClInclude Include="D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h" />
+    <ClCompile Include="D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Component.cpp" />
+    <ClInclude Include="D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Component.h" />
+    <ClCompile Include="D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\SceneComponent.cpp" />
+    <ClInclude Include="D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\SceneComponent.h" />
+    <ClCompile Include="D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.cpp" />
+    <ClInclude Include="D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h" />
+    <ClInclude Include="D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Libraries\Vectors.h" />
+    <ClInclude Include="D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Libraries\List.h" />
+    <ClInclude Include="D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\common\stb_image.h" />
+    <ClCompile Include="D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\common\shader.cpp" />
+    <ClInclude Include="D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\common\shader.hpp" />
+    <ClCompile Include="D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\common\texture.cpp" />
+    <ClInclude Include="D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\common\texture.hpp" />
+    <ClCompile Include="D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\common\controls.cpp" />
+    <ClInclude Include="D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\common\controls.hpp" />
+    <ClCompile Include="D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\common\objloader.cpp" />
+    <ClInclude Include="D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\common\objloader.hpp" />
+    <ClCompile Include="D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\common\vboindexer.cpp" />
+    <ClInclude Include="D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\common\vboindexer.hpp" />
+    <ClInclude Include="D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\common\text2D.hpp" />
+    <ClCompile Include="D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\common\text2D.cpp" />
+    <ClInclude Include="D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\common\tangentspace.hpp" />
+    <ClCompile Include="D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\common\tangentspace.cpp" />
+    <None Include="D:\Prog\Book\OpenGL\Unireal\Solution\Shaders\Billboard.fragmentshader">
+    </None>
+    <None Include="D:\Prog\Book\OpenGL\Unireal\Solution\Shaders\Billboard.vertexshader">
+    </None>
+    <None Include="D:\Prog\Book\OpenGL\Unireal\Solution\Shaders\ColorFragmentShader.fragmentshader">
+    </None>
+    <None Include="D:\Prog\Book\OpenGL\Unireal\Solution\Shaders\DepthRTT.fragmentshader">
+    </None>
+    <None Include="D:\Prog\Book\OpenGL\Unireal\Solution\Shaders\DepthRTT.vertexshader">
+    </None>
+    <None Include="D:\Prog\Book\OpenGL\Unireal\Solution\Shaders\NormalMapping.fragmentshader">
+    </None>
+    <None Include="D:\Prog\Book\OpenGL\Unireal\Solution\Shaders\NormalMapping.vertexshader">
+    </None>
+    <None Include="D:\Prog\Book\OpenGL\Unireal\Solution\Shaders\Particle.fragmentshader">
+    </None>
+    <None Include="D:\Prog\Book\OpenGL\Unireal\Solution\Shaders\Particle.vertexshader">
+    </None>
+    <None Include="D:\Prog\Book\OpenGL\Unireal\Solution\Shaders\Passthrough.vertexshader">
+    </None>
+    <None Include="D:\Prog\Book\OpenGL\Unireal\Solution\Shaders\ShadowMapping.fragmentshader">
+    </None>
+    <None Include="D:\Prog\Book\OpenGL\Unireal\Solution\Shaders\ShadowMapping.vertexshader">
+    </None>
+    <None Include="D:\Prog\Book\OpenGL\Unireal\Solution\Shaders\ShadowMapping_SimpleVersion.fragmentshader">
+    </None>
+    <None Include="D:\Prog\Book\OpenGL\Unireal\Solution\Shaders\ShadowMapping_SimpleVersion.vertexshader">
+    </None>
+    <None Include="D:\Prog\Book\OpenGL\Unireal\Solution\Shaders\SimpleFragmentShader.fragmentshader">
+    </None>
+    <None Include="D:\Prog\Book\OpenGL\Unireal\Solution\Shaders\SimpleTexture.fragmentshader">
+    </None>
+    <None Include="D:\Prog\Book\OpenGL\Unireal\Solution\Shaders\SimpleTransform.vertexshader">
+    </None>
+    <None Include="D:\Prog\Book\OpenGL\Unireal\Solution\Shaders\SimpleVertexShader.vertexshader">
+    </None>
+    <None Include="D:\Prog\Book\OpenGL\Unireal\Solution\Shaders\SingleColor.fragmentshader">
+    </None>
+    <None Include="D:\Prog\Book\OpenGL\Unireal\Solution\Shaders\StandardShading.fragmentshader">
+    </None>
+    <None Include="D:\Prog\Book\OpenGL\Unireal\Solution\Shaders\StandardShading.vertexshader">
+    </None>
+    <None Include="D:\Prog\Book\OpenGL\Unireal\Solution\Shaders\StandardShading_WithSyntaxErrors.fragmentshader">
+    </None>
+    <None Include="D:\Prog\Book\OpenGL\Unireal\Solution\Shaders\StandardShadingRTT.fragmentshader">
+    </None>
+    <None Include="D:\Prog\Book\OpenGL\Unireal\Solution\Shaders\StandardShadingRTT.vertexshader">
+    </None>
+    <None Include="D:\Prog\Book\OpenGL\Unireal\Solution\Shaders\StandardTransparentShading.fragmentshader">
+    </None>
+    <None Include="D:\Prog\Book\OpenGL\Unireal\Solution\Shaders\TextureFragmentShader.fragmentshader">
+    </None>
+    <None Include="D:\Prog\Book\OpenGL\Unireal\Solution\Shaders\TextureFragmentShaderLOD.fragmentshader">
+    </None>
+    <None Include="D:\Prog\Book\OpenGL\Unireal\Solution\Shaders\TextVertexShader.fragmentshader">
+    </None>
+    <None Include="D:\Prog\Book\OpenGL\Unireal\Solution\Shaders\TextVertexShader.vertexshader">
+    </None>
+    <None Include="D:\Prog\Book\OpenGL\Unireal\Solution\Shaders\TransformVertexShader.vertexshader">
+    </None>
+    <None Include="D:\Prog\Book\OpenGL\Unireal\Solution\Shaders\WobblyTexture.fragmentshader">
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Prog\Book\OpenGL\Unireal\Build\ZERO_CHECK.vcxproj">
+      <Project>{F858ACCB-64AD-3F48-BEB4-6739AAD5E34C}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Prog\Book\OpenGL\Unireal\Build\External\GLEW_1130.vcxproj">
+      <Project>{8CC14FAD-D03B-3FA8-A329-4BD04B6A5AD3}</Project>
+      <Name>GLEW_1130</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Prog\Book\OpenGL\Unireal\Build\External\glfw-3.1.2\src\glfw.vcxproj">
+      <Project>{EDA97AE3-530F-3B66-BD50-261F7F68AF47}</Project>
+      <Name>glfw</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

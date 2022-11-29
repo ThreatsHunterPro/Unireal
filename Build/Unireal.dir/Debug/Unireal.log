@@ -1,0 +1,314 @@
+﻿  Main.cpp
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Component.h(10,7): error C2143: erreur de syntaxe : absence de ';' avant '*'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Component.h(10,7): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Component.h(10,14): error C2238: jetons inattendus avant ';'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Component.h(13,19): error C2143: erreur de syntaxe : absence de ';' avant '*'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Component.h(13,19): error C2433: 'Component::Actor' : '__forceinline' non autorisé sur les déclarations de données
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Component.h(13,19): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Component.h(13,38): error C2334: jetons inattendus avant '{' ; corps apparent de la fonction ignoré
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Component.h(16,12): error C2061: erreur de syntaxe : identificateur 'Actor'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\SceneComponent.h(10,17): error C2061: erreur de syntaxe : identificateur 'Actor'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\SceneComponent.h(74,40): error C2061: erreur de syntaxe : identificateur 'Actor'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\SceneComponent.h(75,37): error C2061: erreur de syntaxe : identificateur 'Actor'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\SceneComponent.h(76,37): error C2061: erreur de syntaxe : identificateur 'Actor'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\SceneComponent.h(77,34): error C2061: erreur de syntaxe : identificateur 'Actor'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(49,22): error C2061: erreur de syntaxe : identificateur 'Actor'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts/Game/Actor.h(115,1): error C2660: 'SceneComponent::GetRelativeTransform' : la fonction ne prend pas 1 arguments
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\SceneComponent.h(74,19): message : voir la déclaration de 'SceneComponent::GetRelativeTransform'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts/Game/Actor.h(115,1): message : lors de la tentative de mise en correspondance de la liste des arguments '(Actor *const )'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts/Game/Actor.h(119,1): error C2660: 'SceneComponent::GetRelativeLocation' : la fonction ne prend pas 1 arguments
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\SceneComponent.h(75,17): message : voir la déclaration de 'SceneComponent::GetRelativeLocation'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts/Game/Actor.h(119,1): message : lors de la tentative de mise en correspondance de la liste des arguments '(Actor *const )'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts/Game/Actor.h(123,1): error C2660: 'SceneComponent::GetRelativeRotation' : la fonction ne prend pas 1 arguments
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\SceneComponent.h(76,17): message : voir la déclaration de 'SceneComponent::GetRelativeRotation'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts/Game/Actor.h(123,1): message : lors de la tentative de mise en correspondance de la liste des arguments '(Actor *const )'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts/Game/Actor.h(127,1): error C2660: 'SceneComponent::GetRelativeScale' : la fonction ne prend pas 1 arguments
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\SceneComponent.h(77,17): message : voir la déclaration de 'SceneComponent::GetRelativeScale'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts/Game/Actor.h(127,1): message : lors de la tentative de mise en correspondance de la liste des arguments '(Actor *const )'
+  Engine.cpp
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Component.h(10,7): error C2143: erreur de syntaxe : absence de ';' avant '*'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Component.h(10,7): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Component.h(10,14): error C2238: jetons inattendus avant ';'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Component.h(13,19): error C2143: erreur de syntaxe : absence de ';' avant '*'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Component.h(13,19): error C2433: 'Component::Actor' : '__forceinline' non autorisé sur les déclarations de données
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Component.h(13,19): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Component.h(13,38): error C2334: jetons inattendus avant '{' ; corps apparent de la fonction ignoré
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Component.h(16,12): error C2061: erreur de syntaxe : identificateur 'Actor'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\SceneComponent.h(10,17): error C2061: erreur de syntaxe : identificateur 'Actor'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\SceneComponent.h(74,40): error C2061: erreur de syntaxe : identificateur 'Actor'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\SceneComponent.h(75,37): error C2061: erreur de syntaxe : identificateur 'Actor'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\SceneComponent.h(76,37): error C2061: erreur de syntaxe : identificateur 'Actor'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\SceneComponent.h(77,34): error C2061: erreur de syntaxe : identificateur 'Actor'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(49,22): error C2061: erreur de syntaxe : identificateur 'Actor'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts/Game/Actor.h(115,1): error C2660: 'SceneComponent::GetRelativeTransform' : la fonction ne prend pas 1 arguments
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\SceneComponent.h(74,19): message : voir la déclaration de 'SceneComponent::GetRelativeTransform'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts/Game/Actor.h(115,1): message : lors de la tentative de mise en correspondance de la liste des arguments '(Actor *const )'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts/Game/Actor.h(119,1): error C2660: 'SceneComponent::GetRelativeLocation' : la fonction ne prend pas 1 arguments
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\SceneComponent.h(75,17): message : voir la déclaration de 'SceneComponent::GetRelativeLocation'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts/Game/Actor.h(119,1): message : lors de la tentative de mise en correspondance de la liste des arguments '(Actor *const )'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts/Game/Actor.h(123,1): error C2660: 'SceneComponent::GetRelativeRotation' : la fonction ne prend pas 1 arguments
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\SceneComponent.h(76,17): message : voir la déclaration de 'SceneComponent::GetRelativeRotation'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts/Game/Actor.h(123,1): message : lors de la tentative de mise en correspondance de la liste des arguments '(Actor *const )'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts/Game/Actor.h(127,1): error C2660: 'SceneComponent::GetRelativeScale' : la fonction ne prend pas 1 arguments
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\SceneComponent.h(77,17): message : voir la déclaration de 'SceneComponent::GetRelativeScale'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts/Game/Actor.h(127,1): message : lors de la tentative de mise en correspondance de la liste des arguments '(Actor *const )'
+  World.cpp
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Component.h(10,7): error C2143: erreur de syntaxe : absence de ';' avant '*'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Component.h(10,7): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Component.h(10,14): error C2238: jetons inattendus avant ';'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Component.h(13,19): error C2143: erreur de syntaxe : absence de ';' avant '*'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Component.h(13,19): error C2433: 'Component::Actor' : '__forceinline' non autorisé sur les déclarations de données
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Component.h(13,19): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Component.h(13,38): error C2334: jetons inattendus avant '{' ; corps apparent de la fonction ignoré
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Component.h(16,12): error C2061: erreur de syntaxe : identificateur 'Actor'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\SceneComponent.h(10,17): error C2061: erreur de syntaxe : identificateur 'Actor'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\SceneComponent.h(74,40): error C2061: erreur de syntaxe : identificateur 'Actor'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\SceneComponent.h(75,37): error C2061: erreur de syntaxe : identificateur 'Actor'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\SceneComponent.h(76,37): error C2061: erreur de syntaxe : identificateur 'Actor'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\SceneComponent.h(77,34): error C2061: erreur de syntaxe : identificateur 'Actor'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(49,22): error C2061: erreur de syntaxe : identificateur 'Actor'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts/Game/Actor.h(115,1): error C2660: 'SceneComponent::GetRelativeTransform' : la fonction ne prend pas 1 arguments
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\SceneComponent.h(74,19): message : voir la déclaration de 'SceneComponent::GetRelativeTransform'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts/Game/Actor.h(115,1): message : lors de la tentative de mise en correspondance de la liste des arguments '(Actor *const )'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts/Game/Actor.h(119,1): error C2660: 'SceneComponent::GetRelativeLocation' : la fonction ne prend pas 1 arguments
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\SceneComponent.h(75,17): message : voir la déclaration de 'SceneComponent::GetRelativeLocation'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts/Game/Actor.h(119,1): message : lors de la tentative de mise en correspondance de la liste des arguments '(Actor *const )'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts/Game/Actor.h(123,1): error C2660: 'SceneComponent::GetRelativeRotation' : la fonction ne prend pas 1 arguments
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\SceneComponent.h(76,17): message : voir la déclaration de 'SceneComponent::GetRelativeRotation'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts/Game/Actor.h(123,1): message : lors de la tentative de mise en correspondance de la liste des arguments '(Actor *const )'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts/Game/Actor.h(127,1): error C2660: 'SceneComponent::GetRelativeScale' : la fonction ne prend pas 1 arguments
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\SceneComponent.h(77,17): message : voir la déclaration de 'SceneComponent::GetRelativeScale'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts/Game/Actor.h(127,1): message : lors de la tentative de mise en correspondance de la liste des arguments '(Actor *const )'
+  Actor.cpp
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Component.h(10,7): error C2143: erreur de syntaxe : absence de ';' avant '*'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Component.h(10,7): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Component.h(10,14): error C2238: jetons inattendus avant ';'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Component.h(13,19): error C2143: erreur de syntaxe : absence de ';' avant '*'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Component.h(13,19): error C2433: 'Component::Actor' : '__forceinline' non autorisé sur les déclarations de données
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Component.h(13,19): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Component.h(13,38): error C2334: jetons inattendus avant '{' ; corps apparent de la fonction ignoré
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Component.h(16,12): error C2061: erreur de syntaxe : identificateur 'Actor'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\SceneComponent.h(10,17): error C2061: erreur de syntaxe : identificateur 'Actor'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\SceneComponent.h(74,40): error C2061: erreur de syntaxe : identificateur 'Actor'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\SceneComponent.h(75,37): error C2061: erreur de syntaxe : identificateur 'Actor'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\SceneComponent.h(76,37): error C2061: erreur de syntaxe : identificateur 'Actor'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\SceneComponent.h(77,34): error C2061: erreur de syntaxe : identificateur 'Actor'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(49,22): error C2061: erreur de syntaxe : identificateur 'Actor'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h(115,1): error C2660: 'SceneComponent::GetRelativeTransform' : la fonction ne prend pas 1 arguments
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\SceneComponent.h(74,19): message : voir la déclaration de 'SceneComponent::GetRelativeTransform'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h(115,1): message : lors de la tentative de mise en correspondance de la liste des arguments '(Actor *const )'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h(119,1): error C2660: 'SceneComponent::GetRelativeLocation' : la fonction ne prend pas 1 arguments
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\SceneComponent.h(75,17): message : voir la déclaration de 'SceneComponent::GetRelativeLocation'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h(119,1): message : lors de la tentative de mise en correspondance de la liste des arguments '(Actor *const )'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h(123,1): error C2660: 'SceneComponent::GetRelativeRotation' : la fonction ne prend pas 1 arguments
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\SceneComponent.h(76,17): message : voir la déclaration de 'SceneComponent::GetRelativeRotation'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h(123,1): message : lors de la tentative de mise en correspondance de la liste des arguments '(Actor *const )'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h(127,1): error C2660: 'SceneComponent::GetRelativeScale' : la fonction ne prend pas 1 arguments
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\SceneComponent.h(77,17): message : voir la déclaration de 'SceneComponent::GetRelativeScale'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h(127,1): message : lors de la tentative de mise en correspondance de la liste des arguments '(Actor *const )'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.cpp(6,42): error C2665: 'SceneComponent::SceneComponent' : aucune fonction surchargée n’a pu convertir tous les types d’arguments.
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\SceneComponent.h(92,1): message : est peut-être 'SceneComponent::SceneComponent(const SceneComponent &)'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.cpp(6,36): message : 'SceneComponent::SceneComponent(const SceneComponent &)' : impossible de convertir l'argument 1 de 'Actor *' en 'const SceneComponent &'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.cpp(6,42): message : Raison : impossible de convertir de 'Actor *' en 'const SceneComponent'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.cpp(6,42): message : Aucun constructeur n'a pu prendre le type de source, ou la résolution de la surcharge du constructeur était ambiguë
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.cpp(6,42): message : lors de la tentative de mise en correspondance de la liste des arguments '(Actor *)'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.cpp(187,28): error C3861: 'FTransform' : identificateur introuvable
+  Component.cpp
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\SceneComponent.h(6,1): error C2504: 'Component' : classe de base non définie
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\SceneComponent.h(10,17): error C2061: erreur de syntaxe : identificateur 'Actor'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\SceneComponent.h(74,40): error C2061: erreur de syntaxe : identificateur 'Actor'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\SceneComponent.h(75,37): error C2061: erreur de syntaxe : identificateur 'Actor'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\SceneComponent.h(76,37): error C2061: erreur de syntaxe : identificateur 'Actor'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\SceneComponent.h(77,34): error C2061: erreur de syntaxe : identificateur 'Actor'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\SceneComponent.h(13,15): error C3668: 'SceneComponent::Start' : la méthode comprenant le spécificateur de substitution 'override' n'a substitué aucune méthode de la classe de base
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\SceneComponent.h(14,15): error C3668: 'SceneComponent::Update' : la méthode comprenant le spécificateur de substitution 'override' n'a substitué aucune méthode de la classe de base
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\SceneComponent.h(15,15): error C3668: 'SceneComponent::Stop' : la méthode comprenant le spécificateur de substitution 'override' n'a substitué aucune méthode de la classe de base
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(6,1): error C2504: 'Component' : classe de base non définie
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(49,22): error C2061: erreur de syntaxe : identificateur 'Actor'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(52,15): error C3668: 'StaticMeshComponent::Start' : la méthode comprenant le spécificateur de substitution 'override' n'a substitué aucune méthode de la classe de base
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(53,15): error C3668: 'StaticMeshComponent::Update' : la méthode comprenant le spécificateur de substitution 'override' n'a substitué aucune méthode de la classe de base
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(54,15): error C3668: 'StaticMeshComponent::Stop' : la méthode comprenant le spécificateur de substitution 'override' n'a substitué aucune méthode de la classe de base
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h(15,7): error C2065: 'Component' : identificateur non déclaré
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h(15,17): error C2059: erreur de syntaxe : '>'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h(115,1): error C2660: 'SceneComponent::GetRelativeTransform' : la fonction ne prend pas 1 arguments
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\SceneComponent.h(74,19): message : voir la déclaration de 'SceneComponent::GetRelativeTransform'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h(115,1): message : lors de la tentative de mise en correspondance de la liste des arguments '(Actor *const )'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h(119,1): error C2660: 'SceneComponent::GetRelativeLocation' : la fonction ne prend pas 1 arguments
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\SceneComponent.h(75,17): message : voir la déclaration de 'SceneComponent::GetRelativeLocation'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h(119,1): message : lors de la tentative de mise en correspondance de la liste des arguments '(Actor *const )'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h(123,1): error C2660: 'SceneComponent::GetRelativeRotation' : la fonction ne prend pas 1 arguments
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\SceneComponent.h(76,17): message : voir la déclaration de 'SceneComponent::GetRelativeRotation'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h(123,1): message : lors de la tentative de mise en correspondance de la liste des arguments '(Actor *const )'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h(127,1): error C2660: 'SceneComponent::GetRelativeScale' : la fonction ne prend pas 1 arguments
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\SceneComponent.h(77,17): message : voir la déclaration de 'SceneComponent::GetRelativeScale'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h(127,1): message : lors de la tentative de mise en correspondance de la liste des arguments '(Actor *const )'
+  SceneComponent.cpp
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(6,1): error C2504: 'Component' : classe de base non définie
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(9,9): error C3646: 'vertexArrayID' : spécificateur de substitution inconnu
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(9,22): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(12,9): error C3646: 'programID' : spécificateur de substitution inconnu
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(12,18): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(17,9): error C3646: 'matrixID' : spécificateur de substitution inconnu
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(17,17): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(18,7): error C3646: 'modelMatrix' : spécificateur de substitution inconnu
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(18,18): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(19,9): error C3646: 'modelMatrixID' : spécificateur de substitution inconnu
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(19,22): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(20,7): error C3646: 'viewMatrix' : spécificateur de substitution inconnu
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(20,17): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(21,9): error C3646: 'viewMatrixID' : spécificateur de substitution inconnu
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(21,21): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(22,7): error C3646: 'projectionMatrix' : spécificateur de substitution inconnu
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(22,23): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(25,9): error C3646: 'texture' : spécificateur de substitution inconnu
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(25,16): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(26,9): error C3646: 'textureID' : spécificateur de substitution inconnu
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(26,18): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(29,8): error C2143: erreur de syntaxe : absence de ';' avant '<'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(29,8): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(29,23): error C2238: jetons inattendus avant ';'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(30,8): error C2143: erreur de syntaxe : absence de ';' avant '<'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(30,8): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(30,18): error C2238: jetons inattendus avant ';'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(31,8): error C2143: erreur de syntaxe : absence de ';' avant '<'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(31,8): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(31,22): error C2238: jetons inattendus avant ';'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(34,8): error C2143: erreur de syntaxe : absence de ';' avant '<'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(34,8): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(34,32): error C2238: jetons inattendus avant ';'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(35,8): error C2143: erreur de syntaxe : absence de ';' avant '<'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(35,8): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(35,31): error C2238: jetons inattendus avant ';'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(36,8): error C2143: erreur de syntaxe : absence de ';' avant '<'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(36,8): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(36,26): error C2238: jetons inattendus avant ';'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(37,8): error C2143: erreur de syntaxe : absence de ';' avant '<'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(37,8): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(37,30): error C2238: jetons inattendus avant ';'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(40,9): error C3646: 'vertexbuffer' : spécificateur de substitution inconnu
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(40,21): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(41,9): error C3646: 'uvbuffer' : spécificateur de substitution inconnu
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(41,17): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(42,9): error C3646: 'normalbuffer' : spécificateur de substitution inconnu
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(42,21): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(43,9): error C3646: 'elementbuffer' : spécificateur de substitution inconnu
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(43,22): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(46,9): error C3646: 'lightID' : spécificateur de substitution inconnu
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(46,16): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(49,22): error C2061: erreur de syntaxe : identificateur 'Actor'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(62,36): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(62,36): error C2143: erreur de syntaxe : absence de ',' avant '&'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(63,56): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(63,56): error C2143: erreur de syntaxe : absence de ',' avant '&'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(64,33): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(64,33): error C2143: erreur de syntaxe : absence de ',' avant '&'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(70,36): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(70,36): error C2143: erreur de syntaxe : absence de ',' avant '&'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(71,47): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(71,47): error C2143: erreur de syntaxe : absence de ',' avant '&'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(72,36): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(72,36): error C2143: erreur de syntaxe : absence de ',' avant '&'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(73,33): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(73,33): error C2143: erreur de syntaxe : absence de ',' avant '&'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(79,14): error C2143: erreur de syntaxe : absence de ';' avant 'const'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(79,14): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(79,24): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(79,24): error C2143: erreur de syntaxe : absence de ';' avant '&'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(79,49): error C2334: jetons inattendus avant '{' ; corps apparent de la fonction ignoré
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(80,14): error C3646: 'Vector3' : spécificateur de substitution inconnu
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(80,22): error C3646: 'GetForward' : spécificateur de substitution inconnu
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(80,32): error C2059: erreur de syntaxe : '('
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(80,41): error C2334: jetons inattendus avant '{' ; corps apparent de la fonction ignoré
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(81,14): error C3646: 'Vector3' : spécificateur de substitution inconnu
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(81,22): error C3646: 'GetRight' : spécificateur de substitution inconnu
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(81,30): error C2059: erreur de syntaxe : '('
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(81,39): error C2334: jetons inattendus avant '{' ; corps apparent de la fonction ignoré
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(82,14): error C3646: 'Vector3' : spécificateur de substitution inconnu
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(82,22): error C3646: 'GetUp' : spécificateur de substitution inconnu
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(82,27): error C2059: erreur de syntaxe : '('
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(82,36): error C2334: jetons inattendus avant '{' ; corps apparent de la fonction ignoré
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(83,14): error C3646: 'Vector3' : spécificateur de substitution inconnu
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(83,22): error C3646: 'GetMeshPosition' : spécificateur de substitution inconnu
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(83,37): error C2059: erreur de syntaxe : '('
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(83,46): error C2334: jetons inattendus avant '{' ; corps apparent de la fonction ignoré
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(84,14): error C3646: 'Rotator' : spécificateur de substitution inconnu
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(84,22): error C3646: 'GetMeshRotation' : spécificateur de substitution inconnu
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(84,37): error C2059: erreur de syntaxe : '('
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(84,46): error C2334: jetons inattendus avant '{' ; corps apparent de la fonction ignoré
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(85,14): error C3646: 'Vector3' : spécificateur de substitution inconnu
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(85,22): error C3646: 'GetMeshScale' : spécificateur de substitution inconnu
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(85,34): error C2059: erreur de syntaxe : '('
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(85,43): error C2334: jetons inattendus avant '{' ; corps apparent de la fonction ignoré
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(52,15): error C3668: 'StaticMeshComponent::Start' : la méthode comprenant le spécificateur de substitution 'override' n'a substitué aucune méthode de la classe de base
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(53,15): error C3668: 'StaticMeshComponent::Update' : la méthode comprenant le spécificateur de substitution 'override' n'a substitué aucune méthode de la classe de base
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(54,15): error C3668: 'StaticMeshComponent::Stop' : la méthode comprenant le spécificateur de substitution 'override' n'a substitué aucune méthode de la classe de base
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h(13,16): error C2143: erreur de syntaxe : absence de ';' avant '*'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h(13,16): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h(13,31): error C2238: jetons inattendus avant ';'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h(15,7): error C2065: 'Component' : identificateur non déclaré
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h(15,17): error C2059: erreur de syntaxe : '>'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h(58,10): error C2065: 'rootComponent' : identificateur non déclaré
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h(62,10): error C2065: 'rootComponent' : identificateur non déclaré
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h(66,10): error C2065: 'rootComponent' : identificateur non déclaré
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h(70,10): error C2065: 'rootComponent' : identificateur non déclaré
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h(115,10): error C2065: 'rootComponent' : identificateur non déclaré
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h(119,10): error C2065: 'rootComponent' : identificateur non déclaré
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h(123,10): error C2065: 'rootComponent' : identificateur non déclaré
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h(127,10): error C2065: 'rootComponent' : identificateur non déclaré
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h(161,35): error C2039: 'GetModelMatrix' n'est pas membre de 'StaticMeshComponent'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(5): message : voir la déclaration de 'StaticMeshComponent'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h(165,35): error C2039: 'GetMeshPosition' n'est pas membre de 'StaticMeshComponent'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(5): message : voir la déclaration de 'StaticMeshComponent'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h(169,35): error C2039: 'GetMeshRotation' n'est pas membre de 'StaticMeshComponent'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(5): message : voir la déclaration de 'StaticMeshComponent'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h(173,35): error C2039: 'GetMeshScale' n'est pas membre de 'StaticMeshComponent'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(5): message : voir la déclaration de 'StaticMeshComponent'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h(178,35): error C2039: 'GetForward' n'est pas membre de 'StaticMeshComponent'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(5): message : voir la déclaration de 'StaticMeshComponent'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h(182,35): error C2039: 'GetRight' n'est pas membre de 'StaticMeshComponent'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(5): message : voir la déclaration de 'StaticMeshComponent'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h(186,35): error C2039: 'GetUp' n'est pas membre de 'StaticMeshComponent'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\StaticMeshComponent.h(5): message : voir la déclaration de 'StaticMeshComponent'
+  StaticMeshComponent.cpp
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\SceneComponent.h(6,1): error C2504: 'Component' : classe de base non définie
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\SceneComponent.h(10,17): error C2061: erreur de syntaxe : identificateur 'Actor'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\SceneComponent.h(74,40): error C2061: erreur de syntaxe : identificateur 'Actor'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\SceneComponent.h(75,37): error C2061: erreur de syntaxe : identificateur 'Actor'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\SceneComponent.h(76,37): error C2061: erreur de syntaxe : identificateur 'Actor'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\SceneComponent.h(77,34): error C2061: erreur de syntaxe : identificateur 'Actor'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\SceneComponent.h(13,15): error C3668: 'SceneComponent::Start' : la méthode comprenant le spécificateur de substitution 'override' n'a substitué aucune méthode de la classe de base
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\SceneComponent.h(14,15): error C3668: 'SceneComponent::Update' : la méthode comprenant le spécificateur de substitution 'override' n'a substitué aucune méthode de la classe de base
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\SceneComponent.h(15,15): error C3668: 'SceneComponent::Stop' : la méthode comprenant le spécificateur de substitution 'override' n'a substitué aucune méthode de la classe de base
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h(14,21): error C2143: erreur de syntaxe : absence de ';' avant '*'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h(14,21): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h(14,33): error C2238: jetons inattendus avant ';'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h(15,7): error C2065: 'Component' : identificateur non déclaré
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h(15,17): error C2059: erreur de syntaxe : '>'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h(115,1): error C2660: 'SceneComponent::GetRelativeTransform' : la fonction ne prend pas 1 arguments
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\SceneComponent.h(74,19): message : voir la déclaration de 'SceneComponent::GetRelativeTransform'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h(115,1): message : lors de la tentative de mise en correspondance de la liste des arguments '(Actor *const )'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h(119,1): error C2660: 'SceneComponent::GetRelativeLocation' : la fonction ne prend pas 1 arguments
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\SceneComponent.h(75,17): message : voir la déclaration de 'SceneComponent::GetRelativeLocation'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h(119,1): message : lors de la tentative de mise en correspondance de la liste des arguments '(Actor *const )'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h(123,1): error C2660: 'SceneComponent::GetRelativeRotation' : la fonction ne prend pas 1 arguments
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\SceneComponent.h(76,17): message : voir la déclaration de 'SceneComponent::GetRelativeRotation'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h(123,1): message : lors de la tentative de mise en correspondance de la liste des arguments '(Actor *const )'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h(127,1): error C2660: 'SceneComponent::GetRelativeScale' : la fonction ne prend pas 1 arguments
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\SceneComponent.h(77,17): message : voir la déclaration de 'SceneComponent::GetRelativeScale'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h(127,1): message : lors de la tentative de mise en correspondance de la liste des arguments '(Actor *const )'
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h(161,10): error C2065: 'staticMesh' : identificateur non déclaré
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h(161,23): error C2065: 'staticMesh' : identificateur non déclaré
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h(165,10): error C2065: 'staticMesh' : identificateur non déclaré
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h(165,23): error C2065: 'staticMesh' : identificateur non déclaré
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h(169,10): error C2065: 'staticMesh' : identificateur non déclaré
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h(169,23): error C2065: 'staticMesh' : identificateur non déclaré
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h(173,10): error C2065: 'staticMesh' : identificateur non déclaré
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h(173,23): error C2065: 'staticMesh' : identificateur non déclaré
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h(178,10): error C2065: 'staticMesh' : identificateur non déclaré
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h(178,23): error C2065: 'staticMesh' : identificateur non déclaré
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h(182,10): error C2065: 'staticMesh' : identificateur non déclaré
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h(182,23): error C2065: 'staticMesh' : identificateur non déclaré
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h(186,10): error C2065: 'staticMesh' : identificateur non déclaré
+D:\Prog\Book\OpenGL\Unireal\Solution\Scripts\Game\Actor.h(186,23): error C2065: 'staticMesh' : identificateur non déclaré
+  tangentspace.cpp
+  Génération de code en cours...

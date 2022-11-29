@@ -1,0 +1,10 @@
+^D:\PROG\BOOK\OPENGL\UNIREAL\SOLUTION\EXTERNAL\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Prog/Book/OpenGL/Unireal/Solution -BD:/Prog/Book/OpenGL/Unireal/Build --check-stamp-file D:/Prog/Book/OpenGL/Unireal/Build/External/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
