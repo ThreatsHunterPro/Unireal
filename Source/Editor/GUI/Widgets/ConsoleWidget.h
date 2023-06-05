@@ -26,10 +26,18 @@ public:
 
 public:
     void Draw() override;
-    void Clear();
+    void Stop() override;
+
+private:
     void AddLog(Log_Severity severity, const char* fmt, ...);
+    void ShowLogs();
+    void ClearLogs();
+    
     const char* SeverityToString(Log_Severity _severity) const;
+
+
+    void PrintOnCollapse();
     const char** Collapse();
     bool CheckToCollapse(int& _index);
-    void Stop() override;
+    
 };

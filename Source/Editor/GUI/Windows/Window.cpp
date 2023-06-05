@@ -97,6 +97,8 @@ void Window::UpdateWidgets() const
 	ImGui_ImplOpenGL3_NewFrame();
 	ImGui_ImplGlfw_NewFrame();
 	ImGui::NewFrame();
+
+	ImGui::ShowDemoWindow();
 	
 	// Draw widgets
 	const int _widgetsCount = widgets.Lenght();

@@ -6,16 +6,19 @@ ConsoleWidget::ConsoleWidget(const string& _name, Window* _window) : PanelWidget
     {
         Button("Clear", [this]
         {
-            Clear();
+            ClearLogs();
         }),
-        Button("Copy", [this]
+        Button("Clear on Play", [this]
         {
             ImGui::LogToClipboard();
         }),
         Button("Collapse", [this]
         {
-            cout << "Collapse" << endl;
-            AddLog(Error, "coucou");
+            AddLog(Error, "Collapse");
+        }),
+        Button("Error Pause", [this]
+        {
+            cout << "Pause" << endl;
         }),
         Button("Filters", [this]
         {
@@ -30,16 +33,49 @@ ConsoleWidget::ConsoleWidget(const string& _name, Window* _window) : PanelWidget
             ImGui::OpenPopup("Options");
         })
     };
-    Clear();
+
+    showMessages = true;
+    showWarnings = true;
+    showErrors = true;
+    autoScroll = true;
+    
+    ClearLogs();
 }
 
 
 void ConsoleWidget::Draw()
 {
-    ImGui::ShowDemoWindow();
+    constexpr ImGuiTabBarFlags _tabFlags = ImGuiTabBarFlags_FittingPolicyDefault_ | ImGuiTabBarFlags_Reorderable;
+    if (ImGui::BeginTabBar("Tabs", _tabFlags))
+    {
+        // for (int doc_n = 0; doc_n < app.Documents.Size; doc_n++)
+        {
+            // MyDocument* doc = &app.Documents[doc_n];
+            // if (!doc->Open)
+            //     continue;
+            //
+            // ImGuiTabItemFlags tab_flags = (doc->Dirty ? ImGuiTabItemFlags_UnsavedDocument : 0);
+            // bool visible = ImGui::BeginTabItem(doc->Name, &doc->Open, tab_flags);
+            //
+            // // Cancel attempt to close when unsaved add to save queue so we can display a popup.
+            // if (!doc->Open && doc->Dirty)
+            // {
+            //     doc->Open = true;
+            //     doc->DoQueueClose();
+            // }
+            //
+            // MyDocument::DisplayContextMenu(doc);
+            // if (visible)
+            // {
+            //     MyDocument::DisplayContents(doc);
+            //     ImGui::EndTabItem();
+            // }
+        }
+
+        ImGui::EndTabBar();
+    }
     
     ImGui::Begin(name.c_str(), nullptr);
-
     const int _buttonsCount = buttons.Lenght();
     for (int _buttonIndex = 0; _buttonIndex < _buttonsCount; _buttonIndex++)
     {
@@ -54,15 +90,49 @@ void ConsoleWidget::Draw()
     }
     
     ImGui::SameLine();
-    filter.Draw("Filter");
+    filter.Draw("Filter", 250.0f);
+    
     ImGui::SameLine();
     ImGui::Checkbox("Auto-scroll", &autoScroll);
     
     ImGui::Separator();
+    ShowLogs();
+    
+    ImGui::Separator();
+    ImGui::End();
+}
 
+void ConsoleWidget::Stop()
+{
+    ClearLogs();
+}
+
+
+void ConsoleWidget::AddLog(Log_Severity _severity, const char* _toAdd, ...)
+{
+    va_list _args;
+    va_start(_args, _toAdd);
+    
+    char _logWithSeverity[1024];
+    snprintf(_logWithSeverity, sizeof(_logWithSeverity), "[%f] %s: %s\n", ImGui::GetTime(), SeverityToString(_severity), _toAdd);
+    buffer.appendfv(_logWithSeverity, _args);
+
+    va_end(_args);
+    
+    int _oldSize = buffer.size();
+    for (const int newSize = buffer.size(); _oldSize < newSize; _oldSize++)
+    {
+        if (buffer[_oldSize] == '\n')
+        {
+            offsets.push_back(_oldSize + 1);
+        }
+    }
+}
+
+void ConsoleWidget::ShowLogs()
+{
     if (ImGui::BeginChild("Console", ImVec2(0.0f, 0.0f), false, ImGuiWindowFlags_HorizontalScrollbar))
     {
-        ImGui::PushStyleVar(ImGuiStyleVar_ItemSpacing, ImVec2(0, 0));
         const char* _buffer = buffer.begin();
         const char* _bufferEnd = buffer.end();
         
@@ -75,7 +145,11 @@ void ConsoleWidget::Draw()
                 
                 if (filter.PassFilter(_lineStart, _lineEnd))
                 {
+                    PrintOnCollapse();
+                    
+                    ImGui::PushStyleColor(ImGuiCol_Text, ImVec4(0.4f, 0.8f, 0.4f, 1.0f));
                     ImGui::TextUnformatted(_lineStart, _lineEnd);
+                    ImGui::PopStyleColor();
                 }
             }
         }
@@ -89,12 +163,14 @@ void ConsoleWidget::Draw()
                 {
                     const char* line_start = _buffer + offsets[_line];
                     const char* line_end = (_line + 1 < offsets.Size) ? (_buffer + offsets[_line + 1] - 1) : _bufferEnd;
+                    
+                    ImGui::PushStyleColor(ImGuiCol_Text, ImVec4(1.0f, 0.0f, 0.0f, 1.0f));
                     ImGui::TextUnformatted(line_start, line_end);
+                    ImGui::PopStyleColor();
                 }
             }
             clipper.End();
         }
-        ImGui::PopStyleVar();
 
         if (autoScroll && ImGui::GetScrollY() >= ImGui::GetScrollMaxY())
         {
@@ -102,44 +178,13 @@ void ConsoleWidget::Draw()
         }
     }
     ImGui::EndChild();
-    
-    ImGui::Separator();
-    
-    ImGui::End();
 }
 
-void ConsoleWidget::Stop()
-{
-    
-}
-
-
-void ConsoleWidget::Clear()
+void ConsoleWidget::ClearLogs()
 {
     buffer.clear();
     offsets.clear();
     offsets.push_back(0);
-}
-
-void ConsoleWidget::AddLog(Log_Severity _severity, const char* _toAdd, ...)
-{
-    va_list _args;
-    va_start(_args, _toAdd);
-    
-    char _logWithSeverity[1024];
-    snprintf(_logWithSeverity, sizeof(_logWithSeverity), "[%f] %s: %s", ImGui::GetTime(), SeverityToString(_severity), _toAdd);
-    buffer.appendfv(_logWithSeverity, _args);
-
-    va_end(_args);
-    
-    int _oldSize = buffer.size();
-    for (const int newSize = buffer.size(); _oldSize < newSize; _oldSize++)
-    {
-        if (buffer[_oldSize] == '\n')
-        {
-            offsets.push_back(_oldSize + 1);
-        }
-    }
 }
 
 const char* ConsoleWidget::SeverityToString(Log_Severity _severity) const
@@ -157,6 +202,12 @@ const char* ConsoleWidget::SeverityToString(Log_Severity _severity) const
     }
         
     return "";
+}
+
+
+void ConsoleWidget::PrintOnCollapse()
+{
+    
 }
 
 const char** ConsoleWidget::Collapse()
