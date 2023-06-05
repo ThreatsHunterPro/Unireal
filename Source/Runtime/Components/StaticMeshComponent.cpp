@@ -135,7 +135,7 @@ void StaticMeshComponent::SetMeshScale(const Vector3& _scale)
 
 #pragma region InitMethods
 
-void StaticMeshComponent::Init(const char* _objPath, const char* _texturePath, bool _useCustomMethod)
+void StaticMeshComponent::Init(String _objPath, String _texturePath, bool _useCustomMethod)
 {
 	if (!_texturePath || !_objPath) return;
 
@@ -154,8 +154,8 @@ void StaticMeshComponent::InitVertex()
 }
 void StaticMeshComponent::InitShaders()
 {
-	const string _path = PATH_SHADERS;
-	programID = TShader::LoadShaders((_path + vertexShaderPath).c_str(), (_path + fragmentShaderPath).c_str());
+	const String _path = PATH_SHADERS;
+	programID = TShader::LoadShaders(_path + vertexShaderPath, _path + fragmentShaderPath);
 }
 void StaticMeshComponent::InitMatrix()
 {
@@ -163,11 +163,11 @@ void StaticMeshComponent::InitMatrix()
 	viewMatrixID = glGetUniformLocation(programID, "M");
 	modelMatrixID = glGetUniformLocation(programID, "V");
 }
-void StaticMeshComponent::InitTextures(const char* _texturePath, bool _useCustomMethod)
+void StaticMeshComponent::InitTextures(String _texturePath, bool _useCustomMethod)
 {
 	char _fullTexturePath[100 * sizeof(char)];
-	const string _path = PATH_TEXTURES;
-	strcpy_s(_fullTexturePath, (_path + _texturePath).c_str());
+	const String _path = PATH_TEXTURES;
+	strcpy_s(_fullTexturePath, _path + _texturePath);
 
 	if (!_useCustomMethod)
 	{
@@ -183,12 +183,12 @@ void StaticMeshComponent::InitTextures(const char* _texturePath, bool _useCustom
 
 	textureID = glGetUniformLocation(programID, "myTextureSampler");
 }
-void StaticMeshComponent::LoadModel(const char* _objPath)
+void StaticMeshComponent::LoadModel(String _objPath)
 {
 	vector<vec2> _uvs;
 	vector<vec3> _normals;
-	const string _path = PATH_MODELS;
-	bool _res = loadOBJ((_path + _objPath).c_str(), vertices, _uvs, _normals);
+	const String _path = PATH_MODELS;
+	bool _res = loadOBJ(_path + _objPath, vertices, _uvs, _normals);
 	indexVBO(vertices, _uvs, _normals, indices, indexed_vertices, indexed_uvs, indexed_normals);
 }
 void StaticMeshComponent::InitBuffers()

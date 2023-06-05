@@ -8,8 +8,8 @@ class StaticMeshComponent : public Component
 
 	// Shader
 	GLuint programID;
-	const char* vertexShaderPath;
-	const char* fragmentShaderPath;
+	String vertexShaderPath;
+	String fragmentShaderPath;
 
 	// Matrix
 	GLuint matrixID;
@@ -51,7 +51,7 @@ public:
 	void Update(float _deltaTime) override;
 	void Stop() override;
 
-	void Init(const char* _objPath, const char* _texturePath, bool _useCustomMethod = false);
+	void Init(String _objPath, String _texturePath, bool _useCustomMethod = false);
 
 	#pragma region TransformMethods
 
@@ -93,8 +93,8 @@ private:
 	void InitVertex();
 	void InitShaders();
 	void InitMatrix();
-	void InitTextures(const char* _texturePath, bool _useCustomMethod = true);
-	void LoadModel(const char* _objPath);
+	void InitTextures(String _texturePath, bool _useCustomMethod = true);
+	void LoadModel(String _objPath);
 	void InitBuffers();
 	void InitLights();
 

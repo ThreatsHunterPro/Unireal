@@ -1,7 +1,7 @@
 #include "Actor.h"
 #include "../World.h"
 
-Actor::Actor(World* _world, string _name) : Object(_world)
+Actor::Actor(World* _world, String _name) : Object(_world)
 {
 	name = _name;
 	components = Array<Component*>();
@@ -51,7 +51,7 @@ void Actor::Stop()
 	}
 }
 
-void Actor::SetMesh(const char* _objPath, const char* _texturePath, bool _useCustomMethod) const
+void Actor::SetMesh(String _objPath, String _texturePath, bool _useCustomMethod) const
 {
 	staticMesh->Init(_objPath, _texturePath, _useCustomMethod);
 }

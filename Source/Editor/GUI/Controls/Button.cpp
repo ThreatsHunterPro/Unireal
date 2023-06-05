@@ -5,9 +5,9 @@ Button::Button()
     title = "ButtonTitle";
     shortcut = "";
     event = Event();
-    children = Array<Button>();
+    children = Array<Button*>();
 }
-Button::Button(const char* _title, Action _callback, const char* _shortcut, Array<Button> _button)
+Button::Button(String _title, Action _callback, String _shortcut, Array<Button*> _button)
 {
     title = _title;
     shortcut = _shortcut;

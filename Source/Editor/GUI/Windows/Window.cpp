@@ -6,9 +6,9 @@ Window::Window()
 	windowTitle = "Unireal";
 	windowSize = vec2(1920, 1080);
 	windowBGColor = vec4(150.0f, 0.0f, 0.0, 0.5f);
-
+	
 	// Widgets values
-	widgets.Add(new EditorBarWidget("Editor", this));
+	widgets.Add(new EditorBarWidget(String("Editor"), this));
 	// widgets.Add(new ToolBarWidget("Tool", this));
 }
 Window::~Window()

@@ -7,6 +7,6 @@ protected:
     bool widgetStatus;
     
 public:
-    ActiveWidget(string _name, Window* _window);
+    ActiveWidget(String _name, Window* _window);
     ~ActiveWidget() override;
 };

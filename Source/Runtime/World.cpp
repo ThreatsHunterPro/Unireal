@@ -58,12 +58,12 @@ void World::Stop()
 	}
 }
 
-void World::SpawnActor(string _name, string _mesh, string _texture, bool _custom, Transform _transform)
+void World::SpawnActor(String _name, String _mesh, String _texture, bool _custom, Transform _transform)
 {
 	Actor* _actor = new Actor(this, _name);
 	if (!_actor) return;
 	
-	_actor->SetMesh(_mesh.c_str(), _texture.c_str(), _custom);
+	_actor->SetMesh(_mesh, _texture, _custom);
 	_actor->SetActorTransform(_transform);
 	actors.Add(_actor);
 }

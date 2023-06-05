@@ -6,10 +6,10 @@
 #define CHECK_PTR(ptr, ...)	if (!ptr) return VA_ARGS
 #define MAX	std::max
 
-#define PATH_CONTENT string("D:/C/UnirealGit/Unireal/Content/")
-#define PATH_TEXTURES string("D:/C/UnirealGit/Unireal/Content/Textures/")
-#define PATH_SHADERS string("D:/C/UnirealGit/Unireal/Content/Shaders/")
-#define PATH_MODELS string("D:/C/UnirealGit/Unireal/Content/Models/")
+#define PATH_CONTENT String("D:/C/UnirealGit/Unireal/Content/")
+#define PATH_TEXTURES String("D:/C/UnirealGit/Unireal/Content/Textures/")
+#define PATH_SHADERS String("D:/C/UnirealGit/Unireal/Content/Shaders/")
+#define PATH_MODELS String("D:/C/UnirealGit/Unireal/Content/Models/")
 
 // #define PATH_CONTENT string("D:/Prog/OpenGL/Unireal/Content/")
 // #define PATH_TEXTURES string("D:/Prog/OpenGL/Unireal/Content/Textures/")
@@ -48,5 +48,6 @@
 #include "Common/text2D.hpp"
 
 #include "Event.h"
+#include "String.h"
 #include "Containers/Array.h"
 #include "Containers/Vectors.h"

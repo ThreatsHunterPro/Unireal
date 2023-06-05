@@ -2,7 +2,7 @@
 #include "../../../Core/Macros.h"
 #include "../../../Runtime/World.h"
 
-RenderPanelWidget::RenderPanelWidget(string _name, Window* _window) : PanelWidget(_name, _window)
+RenderPanelWidget::RenderPanelWidget(String _name, Window* _window) : PanelWidget(_name, _window)
 {
     sceneTexture = 0;
     sceneFramebuffer = 0;
@@ -64,7 +64,7 @@ void RenderPanelWidget::Draw()
     }
 
     // Render the framebuffer texture with ImGui
-    ImGui::Begin(name.c_str());
+    ImGui::Begin(name);
     ImGui::Text("coucou");
     ImGui::Image((void*)(intptr_t)sceneTexture, panelSize, ImVec2(panelSize.x, panelSize.y));
     ImGui::End();

@@ -11,12 +11,12 @@ class Actor : public Object
 	SceneComponent* rootComponent;
 	StaticMeshComponent* staticMesh;
 	
-	string name;
+	String name;
 	Array<Component*> components;
 	Actor* parent;
 
 public:
-	Actor(World* _world, string _name);
+	Actor(World* _world, String _name);
 	virtual ~Actor();
 
 public:
@@ -25,7 +25,7 @@ public:
 	virtual void Stop();
 
 public:
-	void SetMesh(const char* _objPath, const char* _texturePath, bool _useCustomMethod) const;
+	void SetMesh(String _objPath, String _texturePath, bool _useCustomMethod) const;
 
 	#pragma region ParentMethods
 

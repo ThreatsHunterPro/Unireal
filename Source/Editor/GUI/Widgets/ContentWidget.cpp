@@ -4,7 +4,7 @@
 
 namespace fs = std::filesystem;
 
-ContentWidget::ContentWidget(string _name, Window* _window) : PanelWidget(_name, _window)
+ContentWidget::ContentWidget(String _name, Window* _window) : PanelWidget(_name, _window)
 {
     folderTexture = LoadTexture("Folder.png");
     fileTexture = LoadTexture("File.png");
@@ -19,7 +19,7 @@ void ContentWidget::Draw()
     Update();
     
     ImGui::SetNextWindowSize(ImVec2(800, 500));
-    ImGui::Begin(name.c_str(), nullptr);
+    ImGui::Begin(name, nullptr);
 
     if (folders.Lenght() > 0)
     {
@@ -61,7 +61,7 @@ void ContentWidget::DrawBreadcrumbTrail(const Folder& _folder) const
             ImGui::SameLine();
         }
 
-        if (ImGui::Button(folderName.c_str()))
+        if (ImGui::Button(folderName)))
         {
             // Navigate to the clicked folder
             Folder* clickedFolder = folder.FindSubfolderByName(folderName);
@@ -85,14 +85,14 @@ void ContentWidget::DrawFiles(const Folder& _folder) const
             glBindTexture(GL_TEXTURE_2D, fileTexture);
             ImGui::Image((ImTextureID)fileTexture, ImVec2(25, 25));
             ImGui::SameLine();
-            ImGui::Text(_file.Name.c_str());
+            ImGui::Text(_file.Name);
             continue;
         }
 
         glBindTexture(GL_TEXTURE_2D, folderTexture);
         ImGui::Image((ImTextureID)folderTexture, ImVec2(25, 25));
         ImGui::SameLine();
-        if (ImGui::TreeNode(_file.Name.c_str()))
+        if (ImGui::TreeNode(_file.Name))
         {
             DrawFiles(_file);
             ImGui::TreePop();
@@ -111,8 +111,8 @@ void ContentWidget::RetrieveFiles(Folder& _currentFolder)
 {
     for (const auto& _file : fs::directory_iterator(_currentFolder.Path))
     {
-        const string& _fileName = _file.path().stem().string();
-        const string& _filePath = _file.path().string();
+        const String& _fileName = _file.path().stem().string();
+        const String& _filePath = _file.path().string();
         Folder _folder = Folder(_fileName, _filePath);
         
         if (_file.is_regular_file())
@@ -127,13 +127,13 @@ void ContentWidget::RetrieveFiles(Folder& _currentFolder)
 }
 
 //TODO move into Texture class
-GLuint ContentWidget::LoadTexture(const char* filename) const
+GLuint ContentWidget::LoadTexture(String _filename) const
 {
     int width, height, channels;
     //stbi_set_flip_vertically_on_load(true); // invert image on load
-    unsigned char* data = stbi_load((PATH_TEXTURES + filename).c_str(), &width, &height, &channels, 0);
+    unsigned char* data = stbi_load(PATH_TEXTURES + _filename, &width, &height, &channels, 0);
     if (!data) {
-        std::cerr << "Failed to load texture: " << filename << std::endl;
+        std::cerr << "Failed to load texture: " << _filename << std::endl;
         return 0;
     }
 

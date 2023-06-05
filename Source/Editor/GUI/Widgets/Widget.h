@@ -6,15 +6,15 @@ class Window;
 class Widget
 {
 protected:
-    string name;
+    String name;
     Window* window;
 
 public:
-    FORCEINLINE void SetName(const string& _name) { name = _name; }
-    FORCEINLINE string GetName() const { return name; }
+    FORCEINLINE void SetName(const String& _name) { name = _name; }
+    FORCEINLINE String GetName() const { return name; }
     
 public:
-    Widget(string _name, Window* _window);
+    Widget(String _name, Window* _window);
     virtual ~Widget();
 
 public:

@@ -1,26 +1,26 @@
 #include "ConsoleWidget.h"
 
-ConsoleWidget::ConsoleWidget(const string& _name, Window* _window) : PanelWidget(_name, _window)
+ConsoleWidget::ConsoleWidget(const String& _name, Window* _window) : PanelWidget(_name, _window)
 {
-    buttons =
+    buttons = 
     {
-        Button("Clear", [this]
+        new Button("Clear", [this]
         {
             ClearLogs();
         }),
-        Button("Clear on Play", [this]
-        {
-            ImGui::LogToClipboard();
-        }),
-        Button("Collapse", [this]
+        new Button("Clear on Play", [this]
         {
             AddLog(Error, "Collapse");
         }),
-        Button("Error Pause", [this]
+        new Button("Collapse", [this]
+        {
+            AddLog(Warning, "Collapse");
+        }),
+        new Button("Error Pause", [this]
         {
             cout << "Pause" << endl;
         }),
-        Button("Filters", [this]
+        new Button("Filters", [this]
         {
            if (ImGui::BeginPopup("Options"))
            {
@@ -45,6 +45,14 @@ ConsoleWidget::ConsoleWidget(const string& _name, Window* _window) : PanelWidget
 
 void ConsoleWidget::Draw()
 {
+    const int _logsCount = logs.Lenght();
+    for (int _logIndex = 0; _logIndex < _logsCount; _logIndex++)
+    {
+        const Log* _log = logs[_logIndex];
+        ImGui::TextColored(_log->GetColor(), _log->GetFullLog());
+    }
+    
+    /*
     constexpr ImGuiTabBarFlags _tabFlags = ImGuiTabBarFlags_FittingPolicyDefault_ | ImGuiTabBarFlags_Reorderable;
     if (ImGui::BeginTabBar("Tabs", _tabFlags))
     {
@@ -75,7 +83,7 @@ void ConsoleWidget::Draw()
         ImGui::EndTabBar();
     }
     
-    ImGui::Begin(name.c_str(), nullptr);
+    ImGui::Begin(name, nullptr);
     const int _buttonsCount = buttons.Lenght();
     for (int _buttonIndex = 0; _buttonIndex < _buttonsCount; _buttonIndex++)
     {
@@ -99,7 +107,7 @@ void ConsoleWidget::Draw()
     ShowLogs();
     
     ImGui::Separator();
-    ImGui::End();
+    ImGui::End();*/
 }
 
 void ConsoleWidget::Stop()
@@ -108,13 +116,17 @@ void ConsoleWidget::Stop()
 }
 
 
-void ConsoleWidget::AddLog(Log_Severity _severity, const char* _toAdd, ...)
+void ConsoleWidget::AddLog(Log_Severity _severity, String _string, ...)
 {
+    Log* _log = new Log(ImGui::GetTime(), _severity, _string);
+    logs.Add(_log);
+    
+    /*
     va_list _args;
     va_start(_args, _toAdd);
     
     char _logWithSeverity[1024];
-    snprintf(_logWithSeverity, sizeof(_logWithSeverity), "[%f] %s: %s\n", ImGui::GetTime(), SeverityToString(_severity), _toAdd);
+    snprintf(_logWithSeverity, sizeof(_logWithSeverity), "[%f] %s: %s\n", ImGui::GetTime(), GetSeverityDatas(_severity,,), _toAdd);
     buffer.appendfv(_logWithSeverity, _args);
 
     va_end(_args);
@@ -126,7 +138,7 @@ void ConsoleWidget::AddLog(Log_Severity _severity, const char* _toAdd, ...)
         {
             offsets.push_back(_oldSize + 1);
         }
-    }
+    }*/
 }
 
 void ConsoleWidget::ShowLogs()
@@ -140,8 +152,8 @@ void ConsoleWidget::ShowLogs()
         {
             for (int _line = 0; _line < offsets.Size; _line++)
             {
-                const char* _lineStart = _buffer + offsets[_line];
-                const char* _lineEnd = (_line + 1 < offsets.Size) ? (_buffer + offsets[_line + 1] - 1) : _bufferEnd;
+                String _lineStart = _buffer + offsets[_line];
+                String _lineEnd = (_line + 1 < offsets.Size) ? (_buffer + offsets[_line + 1] - 1) : _bufferEnd;
                 
                 if (filter.PassFilter(_lineStart, _lineEnd))
                 {
@@ -161,8 +173,8 @@ void ConsoleWidget::ShowLogs()
             {
                 for (int _line = clipper.DisplayStart; _line < clipper.DisplayEnd; _line++)
                 {
-                    const char* line_start = _buffer + offsets[_line];
-                    const char* line_end = (_line + 1 < offsets.Size) ? (_buffer + offsets[_line + 1] - 1) : _bufferEnd;
+                    String line_start = _buffer + offsets[_line];
+                    String line_end = (_line + 1 < offsets.Size) ? (_buffer + offsets[_line + 1] - 1) : _bufferEnd;
                     
                     ImGui::PushStyleColor(ImGuiCol_Text, ImVec4(1.0f, 0.0f, 0.0f, 1.0f));
                     ImGui::TextUnformatted(line_start, line_end);
@@ -185,23 +197,6 @@ void ConsoleWidget::ClearLogs()
     buffer.clear();
     offsets.clear();
     offsets.push_back(0);
-}
-
-const char* ConsoleWidget::SeverityToString(Log_Severity _severity) const
-{
-    switch (_severity)
-    {
-    case Message:
-        return "Message";
-                
-    case Warning:
-        return "Warning";
-                
-    case Error:
-        return "Error";
-    }
-        
-    return "";
 }
 
 

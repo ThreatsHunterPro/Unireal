@@ -7,7 +7,7 @@
 class Window
 {
 	// Main window
-	const char* windowTitle;
+	String windowTitle;
 	vec2 windowSize;
 	vec4 windowBGColor;
 	GLFWwindow* mainWindow;
@@ -28,10 +28,10 @@ public:
 		int _occurrences = 0;
 		for (int _widgetIndex = 0; _widgetIndex < widgets.Lenght(); _widgetIndex++)
 		{
-			string _name = _widget->GetName();
+			String _name = _widget->GetName();
 			if (_name != widgets[_widgetIndex]->GetName()) continue;
 			_occurrences++;
-			_widget->SetName(_name += std::to_string(_occurrences));
+			_widget->SetName(_name += std::to_string(_occurrences).c_str());
 		}
 		
 		widgets.Add(_widget);
