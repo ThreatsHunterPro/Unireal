@@ -1,0 +1,415 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{94FEF830-A36F-3260-A5E2-69F7646039D7}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>Unireal</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\C\UnirealGit\Unireal\Bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Unireal.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Unireal</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\C\UnirealGit\Unireal\Bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Unireal.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Unireal</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\C\UnirealGit\Unireal\Bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Unireal.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Unireal</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\C\UnirealGit\Unireal\Bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Unireal.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Unireal</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\C\UnirealGit\Unireal\Engine\Includes;D:\C\UnirealGit\Unireal\Source\Engine\Includes\GL;D:\C\UnirealGit\Unireal\Source\Engine\Includes\glad;D:\C\UnirealGit\Unireal\Source\Engine\Includes\GLFW;D:\C\UnirealGit\Unireal\Source\Engine\Includes\glm;D:\C\UnirealGit\Unireal\Source\Engine\Includes\assimp;D:\C\UnirealGit\Unireal\Source\Engine\Includes\ImGUI;D:\C\UnirealGit\Unireal\Source\Engine\Includes\asio-1.24.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;PROJECT_CONTENTS_PATH;WITH_EDITOR;GLEW_STATIC;PROJECT_CONTENTS_PATH="D:/C/UnirealGit/Unireal/Contents";CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;PROJECT_CONTENTS_PATH;WITH_EDITOR;GLEW_STATIC;PROJECT_CONTENTS_PATH=\"D:/C/UnirealGit/Unireal/Contents\";CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\C\UnirealGit\Unireal\Engine\Includes;D:\C\UnirealGit\Unireal\Source\Engine\Includes\GL;D:\C\UnirealGit\Unireal\Source\Engine\Includes\glad;D:\C\UnirealGit\Unireal\Source\Engine\Includes\GLFW;D:\C\UnirealGit\Unireal\Source\Engine\Includes\glm;D:\C\UnirealGit\Unireal\Source\Engine\Includes\assimp;D:\C\UnirealGit\Unireal\Source\Engine\Includes\ImGUI;D:\C\UnirealGit\Unireal\Source\Engine\Includes\asio-1.24.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\C\UnirealGit\Unireal\Engine\Includes;D:\C\UnirealGit\Unireal\Source\Engine\Includes\GL;D:\C\UnirealGit\Unireal\Source\Engine\Includes\glad;D:\C\UnirealGit\Unireal\Source\Engine\Includes\GLFW;D:\C\UnirealGit\Unireal\Source\Engine\Includes\glm;D:\C\UnirealGit\Unireal\Source\Engine\Includes\assimp;D:\C\UnirealGit\Unireal\Source\Engine\Includes\ImGUI;D:\C\UnirealGit\Unireal\Source\Engine\Includes\asio-1.24.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>glfw3.lib;opengl32.lib;User32.lib;Gdi32.lib;Shell32.lib;glew32s.lib;assimp.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/C/UnirealGit/Unireal/Engine/Libraries;D:/C/UnirealGit/Unireal/Engine/Libraries/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/C/UnirealGit/Unireal/Build/Source/Debug/Unireal.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/C/UnirealGit/Unireal/Bin/Debug/Unireal.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\C\UnirealGit\Unireal\Engine\Includes;D:\C\UnirealGit\Unireal\Source\Engine\Includes\GL;D:\C\UnirealGit\Unireal\Source\Engine\Includes\glad;D:\C\UnirealGit\Unireal\Source\Engine\Includes\GLFW;D:\C\UnirealGit\Unireal\Source\Engine\Includes\glm;D:\C\UnirealGit\Unireal\Source\Engine\Includes\assimp;D:\C\UnirealGit\Unireal\Source\Engine\Includes\ImGUI;D:\C\UnirealGit\Unireal\Source\Engine\Includes\asio-1.24.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PROJECT_CONTENTS_PATH;WITH_EDITOR;GLEW_STATIC;PROJECT_CONTENTS_PATH="D:/C/UnirealGit/Unireal/Contents";CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PROJECT_CONTENTS_PATH;WITH_EDITOR;GLEW_STATIC;PROJECT_CONTENTS_PATH=\"D:/C/UnirealGit/Unireal/Contents\";CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\C\UnirealGit\Unireal\Engine\Includes;D:\C\UnirealGit\Unireal\Source\Engine\Includes\GL;D:\C\UnirealGit\Unireal\Source\Engine\Includes\glad;D:\C\UnirealGit\Unireal\Source\Engine\Includes\GLFW;D:\C\UnirealGit\Unireal\Source\Engine\Includes\glm;D:\C\UnirealGit\Unireal\Source\Engine\Includes\assimp;D:\C\UnirealGit\Unireal\Source\Engine\Includes\ImGUI;D:\C\UnirealGit\Unireal\Source\Engine\Includes\asio-1.24.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\C\UnirealGit\Unireal\Engine\Includes;D:\C\UnirealGit\Unireal\Source\Engine\Includes\GL;D:\C\UnirealGit\Unireal\Source\Engine\Includes\glad;D:\C\UnirealGit\Unireal\Source\Engine\Includes\GLFW;D:\C\UnirealGit\Unireal\Source\Engine\Includes\glm;D:\C\UnirealGit\Unireal\Source\Engine\Includes\assimp;D:\C\UnirealGit\Unireal\Source\Engine\Includes\ImGUI;D:\C\UnirealGit\Unireal\Source\Engine\Includes\asio-1.24.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>glfw3.lib;opengl32.lib;User32.lib;Gdi32.lib;Shell32.lib;glew32s.lib;assimp.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/C/UnirealGit/Unireal/Engine/Libraries;D:/C/UnirealGit/Unireal/Engine/Libraries/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/C/UnirealGit/Unireal/Build/Source/Release/Unireal.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/C/UnirealGit/Unireal/Bin/Release/Unireal.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\C\UnirealGit\Unireal\Engine\Includes;D:\C\UnirealGit\Unireal\Source\Engine\Includes\GL;D:\C\UnirealGit\Unireal\Source\Engine\Includes\glad;D:\C\UnirealGit\Unireal\Source\Engine\Includes\GLFW;D:\C\UnirealGit\Unireal\Source\Engine\Includes\glm;D:\C\UnirealGit\Unireal\Source\Engine\Includes\assimp;D:\C\UnirealGit\Unireal\Source\Engine\Includes\ImGUI;D:\C\UnirealGit\Unireal\Source\Engine\Includes\asio-1.24.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PROJECT_CONTENTS_PATH;WITH_EDITOR;GLEW_STATIC;PROJECT_CONTENTS_PATH="D:/C/UnirealGit/Unireal/Contents";CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PROJECT_CONTENTS_PATH;WITH_EDITOR;GLEW_STATIC;PROJECT_CONTENTS_PATH=\"D:/C/UnirealGit/Unireal/Contents\";CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\C\UnirealGit\Unireal\Engine\Includes;D:\C\UnirealGit\Unireal\Source\Engine\Includes\GL;D:\C\UnirealGit\Unireal\Source\Engine\Includes\glad;D:\C\UnirealGit\Unireal\Source\Engine\Includes\GLFW;D:\C\UnirealGit\Unireal\Source\Engine\Includes\glm;D:\C\UnirealGit\Unireal\Source\Engine\Includes\assimp;D:\C\UnirealGit\Unireal\Source\Engine\Includes\ImGUI;D:\C\UnirealGit\Unireal\Source\Engine\Includes\asio-1.24.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\C\UnirealGit\Unireal\Engine\Includes;D:\C\UnirealGit\Unireal\Source\Engine\Includes\GL;D:\C\UnirealGit\Unireal\Source\Engine\Includes\glad;D:\C\UnirealGit\Unireal\Source\Engine\Includes\GLFW;D:\C\UnirealGit\Unireal\Source\Engine\Includes\glm;D:\C\UnirealGit\Unireal\Source\Engine\Includes\assimp;D:\C\UnirealGit\Unireal\Source\Engine\Includes\ImGUI;D:\C\UnirealGit\Unireal\Source\Engine\Includes\asio-1.24.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>glfw3.lib;opengl32.lib;User32.lib;Gdi32.lib;Shell32.lib;glew32s.lib;assimp.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/C/UnirealGit/Unireal/Engine/Libraries;D:/C/UnirealGit/Unireal/Engine/Libraries/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/C/UnirealGit/Unireal/Build/Source/MinSizeRel/Unireal.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/C/UnirealGit/Unireal/Bin/MinSizeRel/Unireal.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\C\UnirealGit\Unireal\Engine\Includes;D:\C\UnirealGit\Unireal\Source\Engine\Includes\GL;D:\C\UnirealGit\Unireal\Source\Engine\Includes\glad;D:\C\UnirealGit\Unireal\Source\Engine\Includes\GLFW;D:\C\UnirealGit\Unireal\Source\Engine\Includes\glm;D:\C\UnirealGit\Unireal\Source\Engine\Includes\assimp;D:\C\UnirealGit\Unireal\Source\Engine\Includes\ImGUI;D:\C\UnirealGit\Unireal\Source\Engine\Includes\asio-1.24.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PROJECT_CONTENTS_PATH;WITH_EDITOR;GLEW_STATIC;PROJECT_CONTENTS_PATH="D:/C/UnirealGit/Unireal/Contents";CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PROJECT_CONTENTS_PATH;WITH_EDITOR;GLEW_STATIC;PROJECT_CONTENTS_PATH=\"D:/C/UnirealGit/Unireal/Contents\";CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\C\UnirealGit\Unireal\Engine\Includes;D:\C\UnirealGit\Unireal\Source\Engine\Includes\GL;D:\C\UnirealGit\Unireal\Source\Engine\Includes\glad;D:\C\UnirealGit\Unireal\Source\Engine\Includes\GLFW;D:\C\UnirealGit\Unireal\Source\Engine\Includes\glm;D:\C\UnirealGit\Unireal\Source\Engine\Includes\assimp;D:\C\UnirealGit\Unireal\Source\Engine\Includes\ImGUI;D:\C\UnirealGit\Unireal\Source\Engine\Includes\asio-1.24.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\C\UnirealGit\Unireal\Engine\Includes;D:\C\UnirealGit\Unireal\Source\Engine\Includes\GL;D:\C\UnirealGit\Unireal\Source\Engine\Includes\glad;D:\C\UnirealGit\Unireal\Source\Engine\Includes\GLFW;D:\C\UnirealGit\Unireal\Source\Engine\Includes\glm;D:\C\UnirealGit\Unireal\Source\Engine\Includes\assimp;D:\C\UnirealGit\Unireal\Source\Engine\Includes\ImGUI;D:\C\UnirealGit\Unireal\Source\Engine\Includes\asio-1.24.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>glfw3.lib;opengl32.lib;User32.lib;Gdi32.lib;Shell32.lib;glew32s.lib;assimp.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/C/UnirealGit/Unireal/Engine/Libraries;D:/C/UnirealGit/Unireal/Engine/Libraries/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/C/UnirealGit/Unireal/Build/Source/RelWithDebInfo/Unireal.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/C/UnirealGit/Unireal/Bin/RelWithDebInfo/Unireal.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\C\UnirealGit\Unireal\Source\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/C/UnirealGit/Unireal/Source/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/C/UnirealGit/Unireal -BD:/C/UnirealGit/Unireal/Build --check-stamp-file D:/C/UnirealGit/Unireal/Build/Source/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\C\UnirealGit\Unireal\Build\Source\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/C/UnirealGit/Unireal/Source/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/C/UnirealGit/Unireal -BD:/C/UnirealGit/Unireal/Build --check-stamp-file D:/C/UnirealGit/Unireal/Build/Source/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\C\UnirealGit\Unireal\Build\Source\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/C/UnirealGit/Unireal/Source/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/C/UnirealGit/Unireal -BD:/C/UnirealGit/Unireal/Build --check-stamp-file D:/C/UnirealGit/Unireal/Build/Source/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\C\UnirealGit\Unireal\Build\Source\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/C/UnirealGit/Unireal/Source/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/C/UnirealGit/Unireal -BD:/C/UnirealGit/Unireal/Build --check-stamp-file D:/C/UnirealGit/Unireal/Build/Source/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\C\UnirealGit\Unireal\Build\Source\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Core\Common\Shader.cpp" />
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Core\Common\controls.cpp" />
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Core\Common\objloader.cpp" />
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Core\Common\quaternion_utils.cpp" />
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Core\Common\stb_image.cpp" />
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Core\Common\tangentspace.cpp" />
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Core\Common\text2D.cpp" />
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Core\Common\texture.cpp" />
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Core\Common\vboindexer.cpp" />
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Core\ImGUI\imgui.cpp" />
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Core\ImGUI\imgui_demo.cpp" />
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Core\ImGUI\imgui_draw.cpp" />
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Core\ImGUI\imgui_impl_glfw.cpp" />
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Core\ImGUI\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Core\ImGUI\imgui_impl_win32.cpp" />
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Core\ImGUI\imgui_tables.cpp" />
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Core\ImGUI\imgui_widgets.cpp" />
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Editor\GUI\Controls\Button.cpp" />
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Editor\GUI\Widgets\ActiveWidget.cpp" />
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Editor\GUI\Widgets\ConsoleWidget.cpp" />
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Editor\GUI\Widgets\ContentWidget.cpp" />
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Editor\GUI\Widgets\EditorBarWidget.cpp" />
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Editor\GUI\Widgets\PanelWidget.cpp" />
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Editor\GUI\Widgets\RenderPanelWidget.cpp" />
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Editor\GUI\Widgets\ToolBarWidget.cpp" />
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Editor\GUI\Widgets\Widget.cpp" />
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Editor\GUI\Windows\Window.cpp" />
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Editor\GameLoop\Engine.cpp" />
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Editor\GameLoop\Main.cpp" />
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Runtime\Actors\Actor.cpp" />
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Runtime\Components\Component.cpp" />
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Runtime\Components\SceneComponent.cpp" />
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Runtime\Components\StaticMeshComponent.cpp" />
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Runtime\Managers\CameraManager.cpp" />
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Runtime\Managers\InputManager.cpp" />
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Runtime\Managers\Manager.cpp" />
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Runtime\Managers\TimerManager.cpp" />
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Runtime\Object.cpp" />
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Runtime\World.cpp" />
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Core\Common\Shader.h" />
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Core\Common\controls.hpp" />
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Core\Common\objloader.hpp" />
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Core\Common\quaternion_utils.hpp" />
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Core\Common\stb_image.h" />
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Core\Common\tangentspace.hpp" />
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Core\Common\text2D.hpp" />
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Core\Common\texture.hpp" />
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Core\Common\vboindexer.hpp" />
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Core\Containers\Array.h" />
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Core\Containers\Vectors.h" />
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Core\Event.h" />
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Core\ImGUI\imconfig.h" />
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Core\ImGUI\imgui.h" />
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Core\ImGUI\imgui_impl_glfw.h" />
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Core\ImGUI\imgui_impl_opengl3.h" />
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Core\ImGUI\imgui_impl_opengl3_loader.h" />
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Core\ImGUI\imgui_impl_win32.h" />
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Core\ImGUI\imgui_internal.h" />
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Core\ImGUI\imstb_rectpack.h" />
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Core\ImGUI\imstb_textedit.h" />
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Core\ImGUI\imstb_truetype.h" />
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Core\Macros.h" />
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Editor\GUI\Controls\Button.h" />
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Editor\GUI\Widgets\ActiveWidget.h" />
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Editor\GUI\Widgets\ConsoleWidget.h" />
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Editor\GUI\Widgets\ContentWidget.h" />
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Editor\GUI\Widgets\EditorBarWidget.h" />
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Editor\GUI\Widgets\PanelWidget.h" />
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Editor\GUI\Widgets\RenderPanelWidget.h" />
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Editor\GUI\Widgets\ToolBarWidget.h" />
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Editor\GUI\Widgets\Widget.h" />
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Editor\GUI\Windows\Window.h" />
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Editor\GameLoop\Engine.h" />
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Runtime\Actors\Actor.h" />
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Runtime\Components\Component.h" />
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Runtime\Components\SceneComponent.h" />
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Runtime\Components\StaticMeshComponent.h" />
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Runtime\Managers\CameraManager.h" />
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Runtime\Managers\InputManager.h" />
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Runtime\Managers\Manager.h" />
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Runtime\Managers\TimerManager.h" />
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Runtime\Object.h" />
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Runtime\World.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\C\UnirealGit\Unireal\Build\ZERO_CHECK.vcxproj">
+      <Project>{CA4A7BC6-E29F-367E-9FAE-FD74E78C2AB2}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

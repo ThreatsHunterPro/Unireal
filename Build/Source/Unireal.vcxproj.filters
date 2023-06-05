@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Core\Common\Shader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Core\Common\controls.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Core\Common\objloader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Core\Common\quaternion_utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Core\Common\stb_image.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Core\Common\tangentspace.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Core\Common\text2D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Core\Common\texture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Core\Common\vboindexer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Core\ImGUI\imgui.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Core\ImGUI\imgui_demo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Core\ImGUI\imgui_draw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Core\ImGUI\imgui_impl_glfw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Core\ImGUI\imgui_impl_opengl3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Core\ImGUI\imgui_impl_win32.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Core\ImGUI\imgui_tables.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Core\ImGUI\imgui_widgets.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Editor\GUI\Controls\Button.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Editor\GUI\Widgets\ActiveWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Editor\GUI\Widgets\ConsoleWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Editor\GUI\Widgets\ContentWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Editor\GUI\Widgets\EditorBarWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Editor\GUI\Widgets\PanelWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Editor\GUI\Widgets\RenderPanelWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Editor\GUI\Widgets\ToolBarWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Editor\GUI\Widgets\Widget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Editor\GUI\Windows\Window.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Editor\GameLoop\Engine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Editor\GameLoop\Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Runtime\Actors\Actor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Runtime\Components\Component.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Runtime\Components\SceneComponent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Runtime\Components\StaticMeshComponent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Runtime\Managers\CameraManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Runtime\Managers\InputManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Runtime\Managers\Manager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Runtime\Managers\TimerManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Runtime\Object.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Runtime\World.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Core\Common\Shader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Core\Common\controls.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Core\Common\objloader.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Core\Common\quaternion_utils.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Core\Common\stb_image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Core\Common\tangentspace.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Core\Common\text2D.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Core\Common\texture.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Core\Common\vboindexer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Core\Containers\Array.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Core\Containers\Vectors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Core\Event.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Core\ImGUI\imconfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Core\ImGUI\imgui.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Core\ImGUI\imgui_impl_glfw.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Core\ImGUI\imgui_impl_opengl3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Core\ImGUI\imgui_impl_opengl3_loader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Core\ImGUI\imgui_impl_win32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Core\ImGUI\imgui_internal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Core\ImGUI\imstb_rectpack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Core\ImGUI\imstb_textedit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Core\ImGUI\imstb_truetype.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Core\Macros.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Editor\GUI\Controls\Button.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Editor\GUI\Widgets\ActiveWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Editor\GUI\Widgets\ConsoleWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Editor\GUI\Widgets\ContentWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Editor\GUI\Widgets\EditorBarWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Editor\GUI\Widgets\PanelWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Editor\GUI\Widgets\RenderPanelWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Editor\GUI\Widgets\ToolBarWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Editor\GUI\Widgets\Widget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Editor\GUI\Windows\Window.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Editor\GameLoop\Engine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Runtime\Actors\Actor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Runtime\Components\Component.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Runtime\Components\SceneComponent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Runtime\Components\StaticMeshComponent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Runtime\Managers\CameraManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Runtime\Managers\InputManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Runtime\Managers\Manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Runtime\Managers\TimerManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Runtime\Object.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Runtime\World.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\C\UnirealGit\Unireal\Source\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{9C7288C0-86D7-3941-9247-D768FCA629E0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{70E6C729-165E-3288-B630-BB540A4594F6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

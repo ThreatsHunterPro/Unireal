@@ -22,7 +22,7 @@ class ConsoleWidget : public PanelWidget
     
 public:
     ConsoleWidget(const string& _name, Window* _window);
-    ~ConsoleWidget() override;
+    ~ConsoleWidget() override = default;
 
 public:
     void Draw() override;
@@ -30,5 +30,6 @@ public:
     void AddLog(Log_Severity severity, const char* fmt, ...);
     const char* SeverityToString(Log_Severity _severity) const;
     const char** Collapse();
+    bool CheckToCollapse(int& _index);
     void Stop() override;
 };

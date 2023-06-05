@@ -33,10 +33,6 @@ ConsoleWidget::ConsoleWidget(const string& _name, Window* _window) : PanelWidget
     Clear();
 }
 
-ConsoleWidget::~ConsoleWidget()
-{
-    
-}
 
 void ConsoleWidget::Draw()
 {
@@ -112,6 +108,12 @@ void ConsoleWidget::Draw()
     ImGui::End();
 }
 
+void ConsoleWidget::Stop()
+{
+    
+}
+
+
 void ConsoleWidget::Clear()
 {
     buffer.clear();
@@ -166,18 +168,15 @@ const char** ConsoleWidget::Collapse()
 
 bool ConsoleWidget::CheckToCollapse(int& _index)
 {
-    int resultat = strcmp(chaine1, chaine2);
-
-    if (resultat == 0)
-    {
-        printf("Les deux chaînes sont identiques.\n");
-    }
+    // int resultat = strcmp(chaine1, chaine2);
+    //
+    // if (resultat == 0)
+    // {
+    //     printf("Les deux chaînes sont identiques.\n");
+    // }
     
     // index to double
-    // double ou non
-}
+    // double ou non*
 
-void ConsoleWidget::Stop()
-{
-    
+    return true;
 }

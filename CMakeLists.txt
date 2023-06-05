@@ -1,18 +1,16 @@
-#Version
 CMAKE_MINIMUM_REQUIRED(VERSION 3.10)
 
-#Name
-PROJECT(Unireal) 
+PROJECT(Unireal)
 
 #Settings
 SET(CMAKE_CXX_STANDARD 20)
 SET(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/Bin)
 
 #Librairies
-LINK_DIRECTORIES(Engine/Libraries)
+link_directories(Engine/Libraries)
 
 #Includes
-INCLUDE_DIRECTORIES(Engine/Includes)
+include_directories(Engine/Includes)
 
 #Subdirectories
-ADD_SUBDIRECTORY(${CMAKE_SOURCE_DIR}/Source)
+add_subdirectory(${CMAKE_SOURCE_DIR}/Source)
