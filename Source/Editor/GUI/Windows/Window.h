@@ -17,6 +17,12 @@ class Window
 	
 public:
 	FORCEINLINE GLFWwindow* GetWindow() const { return mainWindow; }
+	FORCEINLINE vec2 GetWindowSize() const
+	{
+		int width, height;
+		glfwGetWindowSize(mainWindow, &width, &height);
+		return vec2(width, height);
+	}
 	FORCEINLINE void AddWidget(Widget* _widget)
 	{
 		int _occurrences = 0;

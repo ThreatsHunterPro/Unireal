@@ -5,23 +5,6 @@
 
 class EditorBarWidget : public Widget
 {
-    struct Menu
-    {
-        string Title;
-        Array<Button> Buttons;
-
-        Menu()
-        {
-            Title = "";
-            Buttons = Array<Button>();
-        }
-        Menu(string _title, Array<Button> _buttons)
-        {
-            Title = _title;
-            Buttons = _buttons;
-        }
-    };
-    
     Array<Menu> menus;
     
 public:

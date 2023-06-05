@@ -281,7 +281,27 @@ public:
 	}
 	Node* Last(const int& _index = 0)
 	{
-		return last;
+		Node* _current = last;
+		for (int i = 0; i < _index && _current != nullptr; i++)
+		{
+			_current = _current->previous;
+		}
+		
+		return _current;
+	}
+	bool Contains(const T& value) const
+	{
+		Node* current = first;
+		while (current != nullptr)
+		{
+			if (current->data == value)
+			{
+				return true;
+			}
+			current = current->next;
+		}
+		
+		return false;
 	}
 	int Lenght() const
 	{

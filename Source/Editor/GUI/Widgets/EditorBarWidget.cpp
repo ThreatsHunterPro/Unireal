@@ -1,4 +1,6 @@
 #include "EditorBarWidget.h"
+
+#include "ConsoleWidget.h"
 #include "RenderPanelWidget.h"
 #include "../../../Runtime/World.h"
 
@@ -16,8 +18,10 @@ EditorBarWidget::EditorBarWidget(string _name, Window* _window) : Widget(_name, 
                 Button("Save project", [this] { ExecuteCallback("Save project"); }),
                 Button("Build settings", [this] { ExecuteCallback("Build settings"); }),
                 Button("Build & Run", [this] { ExecuteCallback("Build & Run"); }),
-                Button("Exit", [this] { ExecuteCallback("Exit"); })
-            }),
+                Button("Exit", [this] { ExecuteCallback("Exit"); }, "Alf + F4")
+            },
+            { 3, 6}
+            ),
         
         Menu("Edit", { Button("Preferences") }),
         Menu("Window",
@@ -33,7 +37,10 @@ EditorBarWidget::EditorBarWidget(string _name, Window* _window) : Widget(_name, 
                 Button("Content", [_window] { _window->AddWidget(new ContentWidget("Content", _window)); }),
                 Button("Hierarchy", [this] { ExecuteCallback("Hierarchy"); }),
                 Button("Inspector", [this] { ExecuteCallback("Inspector"); }),
-                Button("Console", [this] { ExecuteCallback("Console"); })
+                Button("Console", [_window]
+                {
+                    _window->AddWidget(new ConsoleWidget("Console", _window));
+                })
             }),
         Menu("Actors",
             {
@@ -62,15 +69,7 @@ EditorBarWidget::~EditorBarWidget()
 
 void EditorBarWidget::Draw()
 {
-    ImGuiStyle& _style = ImGui::GetStyle();
-    ImVec4* _colors = _style.Colors;
-    _colors[ImGuiCol_Button] = ImVec4(0.26f, 0.26f, 0.26f, 1.0f);
-    _colors[ImGuiCol_ButtonHovered] = ImVec4(0.36f, 0.36f, 0.36f, 1.0f);
-    
-    ImGui::SetNextWindowSize(ImVec2(1800, 40));
-    ImGui::Begin(name.c_str(), nullptr, ImGuiWindowFlags_MenuBar | ImGuiWindowFlags_NoTitleBar | ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoMove | ImGuiWindowFlags_NoScrollbar | ImGuiWindowFlags_NoDocking);
-	
-    if (ImGui::BeginMenuBar())
+    if (ImGui::BeginMainMenuBar())
     {
         const int _menusCount = menus.Lenght();
         for (int _menuIndex = 0; _menuIndex < _menusCount; _menuIndex++)
@@ -84,8 +83,13 @@ void EditorBarWidget::Draw()
                 
                 for (int _buttonIndex = 0; _buttonIndex < _buttonsCount; _buttonIndex++)
                 {
+                    if (_menu.Separators.Contains(_buttonIndex))
+                    {
+                        ImGui::Separator();
+                    }
+                    
                     Button _button = _buttons[_buttonIndex];
-                    if (ImGui::MenuItem(_button.GetTitle()))
+                    if (ImGui::MenuItem(_button.GetTitle(), _button.GetShortcut()))
                     {
                         _button.Callback();
                     }
@@ -97,17 +101,15 @@ void EditorBarWidget::Draw()
             ImGui::SameLine();
         }
         
-        ImGui::EndMenuBar();
+        ImGui::EndMainMenuBar();
     }
-    
-    ImGui::End();
 }
-void EditorBarWidget::ExecuteCallback(string _methodName) const
-{
-    cout << _methodName << endl;
-}
-
 void EditorBarWidget::Stop()
 {
     
+}
+
+void EditorBarWidget::ExecuteCallback(string _methodName) const
+{
+    cout << _methodName << endl;
 }

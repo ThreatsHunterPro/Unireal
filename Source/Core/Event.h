@@ -27,6 +27,10 @@ public:
             _callBack(_args...);
         }
     }
+    bool IsBound() const
+    {
+        return callbacks.size() > 0;
+    }
 
     void operator+=(Action _callback)
     {
