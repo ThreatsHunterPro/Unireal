@@ -5,7 +5,7 @@ class ToolBarWidget : public Widget
 {
     
 public:
-    ToolBarWidget(String _name, Window* _window);
+    ToolBarWidget(const String& _name, Window* _window);
 
 public:
     void Draw() override;

@@ -63,7 +63,7 @@ public:
 			Emplace(_data);
 		}
 	}
-	void Add(const T& _data)
+	void Add(T _data)
 	{
 		Node* _node = new Node();
 		_node->data = _data;

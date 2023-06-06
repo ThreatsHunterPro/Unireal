@@ -4,7 +4,7 @@
 #include "RenderPanelWidget.h"
 #include "../../../Runtime/World.h"
 
-EditorBarWidget::EditorBarWidget(String _name, Window* _window) : Widget(_name, _window)
+EditorBarWidget::EditorBarWidget(const String& _name, Window* _window) : Widget(_name, _window)
 {
     menus = 
     {
@@ -109,7 +109,7 @@ void EditorBarWidget::Stop()
     
 }
 
-void EditorBarWidget::ExecuteCallback(String _methodName) const
+void EditorBarWidget::ExecuteCallback(const String& _methodName) const
 {
     cout << _methodName << endl;
 }

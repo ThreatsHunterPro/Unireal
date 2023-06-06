@@ -14,7 +14,7 @@ public:
     FORCEINLINE String GetName() const { return name; }
     
 public:
-    Widget(String _name, Window* _window);
+    Widget(const String& _name, Window* _window);
     virtual ~Widget();
 
 public:

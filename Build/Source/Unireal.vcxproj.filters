@@ -52,6 +52,9 @@
     <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Core\ImGUI\imgui_widgets.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Core\String.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Editor\GUI\Controls\Button.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -187,6 +190,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Core\Macros.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Core\String.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Editor\GUI\Controls\Button.h">

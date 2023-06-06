@@ -10,7 +10,7 @@ class RenderPanelWidget : public PanelWidget
     // GLfloat* border_color;
     
 public:
-    RenderPanelWidget(String _name, Window* _window);
+    RenderPanelWidget(const String& _name, Window* _window);
     ~RenderPanelWidget() override;
 
 public:

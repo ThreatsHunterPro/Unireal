@@ -12,7 +12,7 @@ public:
 public:
     String();
     String(const char* _string);
-    String(string _string);
+    String(std::string _string);
     String(const String& _other);
     ~String();
 
@@ -51,24 +51,16 @@ public:
     }
     String& operator=(const char* _string)
     {
-        if (buffer)
-        {
-            delete[] buffer;
-        }
-
+        delete[] buffer;
         length = strlen(_string);
         buffer = new char[length + 1];
         strcpy(buffer, _string);
 
         return *this;
     }
-    String& operator=(const string& _string)
+    String& operator=(const std::string& _string)
     {
-        if (buffer)
-        {
-            delete[] buffer;
-        }
-
+        delete[] buffer;
         length = _string.length();
         buffer = new char[length + 1];
         strcpy(buffer, _string.c_str());
@@ -92,5 +84,9 @@ public:
         length = _newLenght;
 
         return *this;
+    }
+    bool operator==(const String& _other) const
+    {
+        return !strcmp(buffer, _other.buffer); 
     }
 };

@@ -6,7 +6,7 @@
 #define CHECK_PTR(ptr, ...)	if (!ptr) return VA_ARGS
 #define MAX	std::max
 
-#define PATH_CONTENT String("D:/C/UnirealGit/Unireal/Content/")
+#define PATH_CONTENT "D:/C/UnirealGit/Unireal/Content/"
 #define PATH_TEXTURES String("D:/C/UnirealGit/Unireal/Content/Textures/")
 #define PATH_SHADERS String("D:/C/UnirealGit/Unireal/Content/Shaders/")
 #define PATH_MODELS String("D:/C/UnirealGit/Unireal/Content/Models/")
@@ -46,6 +46,7 @@
 #include "Common/objloader.hpp"
 #include "Common/vboindexer.hpp"
 #include "Common/text2D.hpp"
+#include "Common/stb_image.h"
 
 #include "Event.h"
 #include "String.h"

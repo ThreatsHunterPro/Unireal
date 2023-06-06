@@ -135,7 +135,7 @@ void StaticMeshComponent::SetMeshScale(const Vector3& _scale)
 
 #pragma region InitMethods
 
-void StaticMeshComponent::Init(String _objPath, String _texturePath, bool _useCustomMethod)
+void StaticMeshComponent::Init(const String& _objPath, const String& _texturePath, bool _useCustomMethod)
 {
 	if (!_texturePath || !_objPath) return;
 
@@ -163,7 +163,7 @@ void StaticMeshComponent::InitMatrix()
 	viewMatrixID = glGetUniformLocation(programID, "M");
 	modelMatrixID = glGetUniformLocation(programID, "V");
 }
-void StaticMeshComponent::InitTextures(String _texturePath, bool _useCustomMethod)
+void StaticMeshComponent::InitTextures(const String& _texturePath, bool _useCustomMethod)
 {
 	char _fullTexturePath[100 * sizeof(char)];
 	const String _path = PATH_TEXTURES;
@@ -183,7 +183,7 @@ void StaticMeshComponent::InitTextures(String _texturePath, bool _useCustomMetho
 
 	textureID = glGetUniformLocation(programID, "myTextureSampler");
 }
-void StaticMeshComponent::LoadModel(String _objPath)
+void StaticMeshComponent::LoadModel(const String& _objPath)
 {
 	vector<vec2> _uvs;
 	vector<vec3> _normals;

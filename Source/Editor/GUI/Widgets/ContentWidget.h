@@ -1,58 +1,65 @@
 #pragma once
 #include "PanelWidget.h"
+#include "../Controls/Button.h"
 #include "../../../Core/Macros.h"
 
 class ContentWidget : public PanelWidget
 {
-    class Folder 
+    class File 
     {
-    public:
-        String Name;
-        const char* Path;
-        Array<Folder> Files = Array<Folder>();
+        String name;
+        const char* path;
+        Array<File*> files;
 
-        FORCEINLINE bool IsFolder() const { return Files.Lenght() > 0; }
+    public:
+        FORCEINLINE bool IsFolder() const { return files.Lenght() > 0; }
+        FORCEINLINE String GetName() const { return name; }
+        FORCEINLINE const char* GetPath() const { return path; }
+        FORCEINLINE Array<File*> GetFiles() { return files; }
+        FORCEINLINE void AddFile(File* _file) { files.Add(_file); }
         
-        Folder() = default;
-        Folder(const String& _name, const String& _path)
+    public:
+        File(const String& _name, const char* _path)
         {
-            Name = _name;
-            Path = _path;
+            name = _name;
+            path = _path;
+            files = Array<File*>();
         }
-        Folder(const Folder& other)
+        File(const File* _other)
         {
-            Name = other.Name;
-            Path = other.Path;
-            Files = other.Files;
+            name = _other->name;
+            path = _other->path;
+            files = _other->files;
         }
         
-        Folder& operator=(const Folder& other)
+    public:
+        File& operator=(const File* _other)
         {
-            Name = other.Name;
-            Path = other.Path;
-            Files = other.Files;
+            name = _other->name;
+            path = _other->path;
+            files = _other->files;
             return *this;
         }
     };
 
+    Array<Button*> buttons;
     GLuint folderTexture;
     GLuint fileTexture;
-    Array<Folder> folders;
+    Array<File*> folders;
     
 public:
-    ContentWidget(String _name, Window* _window);
+    ContentWidget(const String& _name, Window* _window);
     ~ContentWidget() override;
 
-private:
-    void Update();
-    void RetrieveFiles(Folder& _currentFolder);
-    //TODO move
-    GLuint LoadTexture(String _filename) const;
-
 public:
-    // void Awake() override;
     void Draw() override;
     void Stop() override;
-    void DrawBreadcrumbTrail(const Folder& folder) const;
-    void DrawFiles(const Folder& _folder) const;
+    
+private:
+    void Update();
+    void RetrieveFiles(File*& _currentFolder);
+    void DrawBreadcrumbTrail(File* folder) const;
+    void DrawTreeFolders(File* _folder) const;
+    void DrawFiles(File* _folder) const;
+    GLuint LoadTexture(const String& _filename) const;
 };

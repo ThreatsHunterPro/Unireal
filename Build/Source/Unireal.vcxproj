@@ -334,6 +334,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Core\ImGUI\imgui_impl_win32.cpp" />
     <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Core\ImGUI\imgui_tables.cpp" />
     <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Core\ImGUI\imgui_widgets.cpp" />
+    <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Core\String.cpp" />
     <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Editor\GUI\Controls\Button.cpp" />
     <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Editor\GUI\Widgets\ActiveWidget.cpp" />
     <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Editor\GUI\Widgets\ConsoleWidget.cpp" />
@@ -356,6 +357,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Runtime\Managers\TimerManager.cpp" />
     <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Runtime\Object.cpp" />
     <ClCompile Include="D:\C\UnirealGit\Unireal\Source\Runtime\World.cpp" />
+    <ClInclude Include="..\..\Source\Editor\GUI\Controls\Menu.h" />
     <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Core\Common\Shader.h" />
     <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Core\Common\controls.hpp" />
     <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Core\Common\objloader.hpp" />
@@ -379,6 +381,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Core\ImGUI\imstb_textedit.h" />
     <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Core\ImGUI\imstb_truetype.h" />
     <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Core\Macros.h" />
+    <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Core\String.h" />
     <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Editor\GUI\Controls\Button.h" />
     <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Editor\GUI\Widgets\ActiveWidget.h" />
     <ClInclude Include="D:\C\UnirealGit\Unireal\Source\Editor\GUI\Widgets\ConsoleWidget.h" />

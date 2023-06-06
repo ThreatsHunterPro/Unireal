@@ -51,7 +51,7 @@ public:
 	void Update(float _deltaTime) override;
 	void Stop() override;
 
-	void Init(String _objPath, String _texturePath, bool _useCustomMethod = false);
+	void Init(const String& _objPath, const String& _texturePath, bool _useCustomMethod = false);
 
 	#pragma region TransformMethods
 
@@ -93,8 +93,8 @@ private:
 	void InitVertex();
 	void InitShaders();
 	void InitMatrix();
-	void InitTextures(String _texturePath, bool _useCustomMethod = true);
-	void LoadModel(String _objPath);
+	void InitTextures(const String& _texturePath, bool _useCustomMethod = true);
+	void LoadModel(const String& _objPath);
 	void InitBuffers();
 	void InitLights();
 

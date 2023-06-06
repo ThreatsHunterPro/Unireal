@@ -1,7 +1,7 @@
 #include "Widget.h"
 #include "../Windows/Window.h"
 
-Widget::Widget(String _name, Window* _window)
+Widget::Widget(const String& _name, Window* _window)
 {
     name = _name;
     window = _window;

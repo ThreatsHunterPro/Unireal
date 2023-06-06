@@ -2,7 +2,7 @@
 #include "../../../Core/Macros.h"
 #include "../../../Runtime/World.h"
 
-RenderPanelWidget::RenderPanelWidget(String _name, Window* _window) : PanelWidget(_name, _window)
+RenderPanelWidget::RenderPanelWidget(const String& _name, Window* _window) : PanelWidget(_name, _window)
 {
     sceneTexture = 0;
     sceneFramebuffer = 0;

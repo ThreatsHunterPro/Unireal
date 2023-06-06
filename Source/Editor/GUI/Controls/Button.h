@@ -1,27 +1,6 @@
 #pragma once
 #include "../../../Core/Macros.h"
 
-class Button;
-
-struct Menu
-{
-    String Title;
-    Array<Button*> Buttons;
-    Array<int> Separators;
-
-    Menu()
-    {
-        Title = "";
-        Buttons = Array<Button*>();
-    }
-    Menu(String _title, Array<Button*> _buttons, Array<int> _separators = Array<int>())
-    {
-        Title = _title;
-        Buttons = _buttons;
-        Separators = _separators;
-    }
-};
-
 class Button
 {
     String title;
@@ -37,7 +16,7 @@ public:
     
 public:
     Button();
-    Button(String _title, Action _callback = Action(), String _shortcut = "", Array<Button*> _button = Array<Button*>());
+    Button(const String& _title, Action _callback = nullptr, const String& _shortcut = "", const Array<Button*>& _button = Array<Button*>());
     ~Button();
 
     bool operator==(const Button& _button) const
