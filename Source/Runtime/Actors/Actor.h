@@ -25,7 +25,7 @@ public:
 	virtual void Stop();
 
 public:
-	void SetMesh(String _objPath, String _texturePath, bool _useCustomMethod) const;
+	void SetMesh(const String& _objPath, const String& _texturePath, bool _useCustomMethod) const;
 
 	#pragma region ParentMethods
 

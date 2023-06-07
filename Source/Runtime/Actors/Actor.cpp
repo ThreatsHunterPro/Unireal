@@ -51,7 +51,7 @@ void Actor::Stop()
 	}
 }
 
-void Actor::SetMesh(String _objPath, String _texturePath, bool _useCustomMethod) const
+void Actor::SetMesh(const String& _objPath, const String& _texturePath, bool _useCustomMethod) const
 {
 	staticMesh->Init(_objPath, _texturePath, _useCustomMethod);
 }

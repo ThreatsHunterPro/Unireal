@@ -17,6 +17,7 @@ public:
     ~String();
 
 public:
+    static String ToString(const char* _number);
     static String FromInt(int _number);
     static String FromDouble(double _number);
     
@@ -31,8 +32,8 @@ public:
         const size_t _newLength = length + _length;
         char* _newBuffer = new char[_newLength + 1];
         
-        std::strcpy(_newBuffer, buffer);
-        std::strcat(_newBuffer, _string);
+        strcpy_s(_newBuffer, _newLength + 1, buffer);
+        strcat_s(_newBuffer, _newLength + 1, _string);
         
         String _result(_newBuffer);
         delete[] _newBuffer;
@@ -44,8 +45,8 @@ public:
         _result.length = length + _other.length;
         _result.buffer = new char[_result.length + 1];
 
-        strcpy(_result.buffer, buffer);
-        strcpy(_result.buffer + length, _other.buffer);
+        strcpy_s(_result.buffer, _result.length + 1, buffer);
+        strcpy_s(_result.buffer + length, _result.length + 1, _other.buffer);
 
         return _result;
     }
@@ -54,7 +55,7 @@ public:
         delete[] buffer;
         length = strlen(_string);
         buffer = new char[length + 1];
-        strcpy(buffer, _string);
+        strcpy_s(buffer, length + 1, _string);
 
         return *this;
     }
@@ -63,7 +64,7 @@ public:
         delete[] buffer;
         length = _string.length();
         buffer = new char[length + 1];
-        strcpy(buffer, _string.c_str());
+        strcpy_s(buffer, length + 1, _string.c_str());
 
         return *this;
     }
@@ -74,11 +75,11 @@ public:
 
         if (buffer)
         {
-            strcpy(_newBuffer, buffer);
+            strcpy_s(_newBuffer, _newLenght + 1, buffer);
             delete[] buffer;
         }
 
-        strcpy(_newBuffer + length, _other.buffer);
+        strcpy_s(_newBuffer + length, _newLenght + 1, _other.buffer);
 
         buffer = _newBuffer;
         length = _newLenght;

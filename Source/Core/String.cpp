@@ -45,6 +45,17 @@ String::~String()
     // delete[] buffer;
 }
 
+String String::ToString(const char* _number)
+{
+    const char* GetData() const {
+        return data;
+    }
+
+    std::string ToString() const {
+        return std::string(data);
+    }
+}
+
 
 String String::FromInt(int _number)
 {

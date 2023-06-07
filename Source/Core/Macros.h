@@ -6,15 +6,15 @@
 #define CHECK_PTR(ptr, ...)	if (!ptr) return VA_ARGS
 #define MAX	std::max
 
-#define PATH_CONTENT "D:/C/UnirealGit/Unireal/Content/"
-#define PATH_TEXTURES String("D:/C/UnirealGit/Unireal/Content/Textures/")
-#define PATH_SHADERS String("D:/C/UnirealGit/Unireal/Content/Shaders/")
-#define PATH_MODELS String("D:/C/UnirealGit/Unireal/Content/Models/")
+// #define PATH_CONTENT "D:/C/UnirealGit/Unireal/Content/"
+// #define PATH_TEXTURES String("D:/C/UnirealGit/Unireal/Content/Textures/")
+// #define PATH_SHADERS String("D:/C/UnirealGit/Unireal/Content/Shaders/")
+// #define PATH_MODELS String("D:/C/UnirealGit/Unireal/Content/Models/")
 
-// #define PATH_CONTENT string("D:/Prog/OpenGL/Unireal/Content/")
-// #define PATH_TEXTURES string("D:/Prog/OpenGL/Unireal/Content/Textures/")
-// #define PATH_SHADERS string("D:/Prog/OpenGL/Unireal/Content/Shaders/")
-// #define PATH_MODELS string("D:/Prog/OpenGL/Unireal/Content/Models/")
+#define PATH_CONTENT "D:/Prog/OpenGL/Unireal/Content/"
+#define PATH_TEXTURES "D:/Prog/OpenGL/Unireal/Content/Textures/"
+#define PATH_SHADERS "D:/Prog/OpenGL/Unireal/Content/Shaders/"
+#define PATH_MODELS "D:/Prog/OpenGL/Unireal/Content/Models/"
 
 #include <iostream>
 #include <ostream>

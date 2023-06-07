@@ -58,7 +58,7 @@ void World::Stop()
 	}
 }
 
-void World::SpawnActor(String _name, String _mesh, String _texture, bool _custom, Transform _transform)
+void World::SpawnActor(const String& _name, const String& _mesh, const String& _texture, bool _custom, Transform _transform)
 {
 	Actor* _actor = new Actor(this, _name);
 	if (!_actor) return;

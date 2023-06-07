@@ -20,6 +20,6 @@ public:
 	void Update() const;
 	void Stop();
 	
-	void SpawnActor(String _name, String _mesh, String _texture, bool _custom, Transform _transform);
+	void SpawnActor(const String& _name, const String& _mesh, const String& _texture, bool _custom, Transform _transform);
 	void DestroyActor(Actor* _actor);
 };

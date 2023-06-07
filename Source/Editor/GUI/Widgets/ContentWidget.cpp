@@ -239,7 +239,7 @@ GLuint ContentWidget::LoadTexture(const String& _filename) const
 {
     int width, height, channels;
     //stbi_set_flip_vertically_on_load(true); // invert image on load
-    unsigned char* data = stbi_load(PATH_TEXTURES + _filename, &width, &height, &channels, 0);
+    unsigned char* data = stbi_load(PATH_TEXTURES.ToString() + _filename, &width, &height, &channels, 0);
     if (!data) {
         std::cerr << "Failed to load texture: " << _filename << std::endl;
         return 0;
